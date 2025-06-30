@@ -1,0 +1,30 @@
+body {
+  background-color: #ffffff;
+  color: #1C1A1A;
+}
+
+.color-swatch.selected {
+  outline: 2px solid #FF69B4;
+  outline-offset: 2px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #FF69B4;
+  box-shadow: 0 0 0 2px rgba(255, 105, 180, 0.2);
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(255, 105, 180, 0.2);
+  border-top-color: #FF69B4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
