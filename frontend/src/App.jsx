@@ -13,6 +13,8 @@ import ProductDetailsPage from './pages/ProductDetailsPage';
 import CartPage from './pages/CartPage';
 import OrderSuccessPage from './pages/OrderSuccessPage';
 import NotFoundPage from './pages/NotFoundPage';
+// --- NEW: Import the new page ---
+import CategoriesPage from './pages/CategoriesPage';
 
 import './App.css';
 
@@ -33,6 +35,8 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            {/* --- NEW: Add the route for the categories page --- */}
+            <Route path="/categories" element={<CategoriesPage />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/category/:categoryName" element={<ProductsPage />} />
             <Route path="/product/:productId" element={<ProductDetailsPage />} />

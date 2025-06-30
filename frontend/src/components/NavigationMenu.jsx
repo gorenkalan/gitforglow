@@ -5,12 +5,11 @@ import { X } from 'lucide-react';
 const NavigationMenu = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
+  // --- THE FIX: Simplified Menu ---
   const menuItems = [
+    { name: 'Home', path: '/' },
     { name: 'All Products', path: '/products' },
-    { name: 'Cream', path: '/category/cream' },
-    { name: 'Serum', path: '/category/serum' },
-    { name: 'Makeup', path: '/category/makeup' },
-    { name: 'Skincare', path: '/category/skincare' },
+    { name: 'Shop by Category', path: '/categories' }, // The new, clean link
     { name: 'Contact Us', path: '/contact' },
     { name: 'Terms & Conditions', path: '/terms' }
   ];
