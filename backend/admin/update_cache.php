@@ -1,5 +1,5 @@
 <?php
-// This script is called by admin/index.php
+// Ensure the user is logged in as an admin
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -9,12 +9,18 @@ if (!isset($_SESSION['admin_logged_in'])) {
     exit;
 }
 
+// Load dependencies
 require_once __DIR__ . '/../vendor/autoload.php';
 use App\GoogleSheetsService;
 use App\Config;
 
+/**
+ * Builds the complete product cache by combining data from the 'products'
+ * and 'inventory' sheets in Google Sheets.
+ */
 function build_products_cache() {
     $sheetsService = new GoogleSheetsService();
+    
     // Fetch raw data from both sheets
     $productsData = $sheetsService->getSheetData(Config::get('GOOGLE_SHEET_NAME_PRODUCTS'));
     $inventoryData = $sheetsService->getSheetData(Config::get('GOOGLE_SHEET_NAME_INVENTORY'));
@@ -22,26 +28,28 @@ function build_products_cache() {
     // Create a lookup map for inventory items for fast access
     $inventoryByProductId = [];
     foreach ($inventoryData as $item) {
-        $productId = $item['productId'];
+        $productId = $item['productId'] ?? null;
+        if (!$productId) continue; // Skip inventory items with no productId
+
         if (!isset($inventoryByProductId[$productId])) {
             $inventoryByProductId[$productId] = [];
         }
+
         $inventoryByProductId[$productId][] = [
-            'variationId' => $item['variationId'],
-            'colorName' => $item['colorName'],
-            'colorHex' => $item['colorHex'],
-            'imageUrl' => $item['imageUrl'],
+            'variationId' => $item['variationId'] ?? null,
+            'colorName' => $item['colorName'] ?? 'Default',
+            'colorHex' => $item['colorHex'] ?? '#FFFFFF',
+            'imageUrl' => $item['imageUrl'] ?? '',
         ];
     }
 
     $combinedProducts = [];
     // Loop through ALL products from the main products sheet
     foreach ($productsData as $product) {
-        $productId = $product['id'];
-        
-        // --- THIS IS THE CORRECTED LOGIC ---
+        $productId = $product['id'] ?? null;
+        if (!$productId) continue; // Skip products with no ID
+
         // Get the variations for this product. If none exist, default to an empty array.
-        // This ensures every product from the 'products' sheet is processed.
         $variations = $inventoryByProductId[$productId] ?? [];
         
         // Add the product to our cache array
@@ -54,7 +62,7 @@ function build_products_cache() {
             'tags' => isset($product['tags']) ? array_map('trim', explode(',', $product['tags'])) : [],
             'rating' => isset($product['rating']) ? (float)$product['rating'] : 0,
             'reviews' => isset($product['reviews']) ? (int)$product['reviews'] : 0,
-            'variations' => $variations, // This will be an empty array [] if no variations were found
+            'variations' => $variations,
         ];
     }
     
@@ -69,4 +77,7 @@ function build_products_cache() {
 // Execute the cache build
 build_products_cache();
 
-// The success message is handled by admin/index.php after including this file.
+// Set a success message in the session and redirect back to the admin dashboard
+$_SESSION['cache_message'] = "Product cache has been successfully refreshed from Google Sheets.";
+header('Location: index.php');
+exit;
