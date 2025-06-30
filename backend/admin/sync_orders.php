@@ -1,5 +1,4 @@
 <?php
-// This script is called by admin/index.php
 if (session_status() === PHP_SESSION_NONE) { session_start(); }
 if (!isset($_SESSION['admin_logged_in'])) { http_response_code(403); echo "Unauthorized"; exit; }
 
@@ -11,22 +10,23 @@ $orderService = new OrderService();
 $sheetsService = new GoogleSheetsService();
 
 $pendingOrders = $orderService->getPendingOrders();
-$ordersToSync = array_filter($pendingOrders, fn($order) => $order['status'] === 'Paid');
+// We only want to sync orders that have a status of 'Paid'
+$ordersToSync = array_filter($pendingOrders, fn($order) => isset($order['status']) && $order['status'] === 'Paid');
 
 $message = "No new paid orders to sync.";
 
 if (!empty($ordersToSync)) {
     $result = $sheetsService->writeOrdersBatch($ordersToSync);
     
-    if ($result['success']) {
-        $count = $result['updated_rows'];
+    if (isset($result['success']) && $result['success']) {
+        $count = $result['updated_rows'] ?? count($ordersToSync);
         // Move synced files to the completed directory
         foreach ($ordersToSync as $order) {
             $orderService->moveOrderToCompleted($order['order_id']);
         }
-        $message = "Successfully synced {$count} new paid orders to Google Sheets.";
+        $message = "Successfully synced {$count} new paid order(s) to Google Sheets.";
     } else {
-        $message = "Error syncing orders: " . $result['error'];
+        $message = "Error syncing orders: " . ($result['error'] ?? 'Unknown error');
     }
 }
 

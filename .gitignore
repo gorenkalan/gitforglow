@@ -1,3 +1,18 @@
-/frontend/node_modules/
-/glow_ecommerce.zip
-/backend/vendor/
+# Backend Dependencies & Secrets
+backend/vendor/
+backend/.env
+backend/credentials.json
+backend/orders/
+backend/cache/
+
+# Frontend Dependencies
+frontend/node_modules/
+frontend/dist/
+
+# IDE / OS specific
+.vscode/
+.idea/
+.DS_Store
+
+# Log files
+*.log

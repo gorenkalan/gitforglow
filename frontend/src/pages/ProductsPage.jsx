@@ -10,8 +10,8 @@ const ProductsPage = () => {
     // Get the raw category name from the URL, which might be encoded (e.g., "body%20lotions")
     const { categoryName: rawCategoryName } = useParams();
 
-    // --- FIX: Decode the category name ---
-    // This converts "body%20lotions" back into "body lotions" so it can be used in the API call.
+    // --- THIS IS THE FIX FOR CATEGORY NAMES WITH SPACES ---
+    // It decodes "body%20lotions" back into "body lotions" for the API call.
     const categoryName = rawCategoryName ? decodeURIComponent(rawCategoryName) : undefined;
     
     // State management for products, pagination, filters, and loading status
@@ -25,52 +25,66 @@ const ProductsPage = () => {
     // Debounce the search term to avoid excessive API calls while the user is typing
     const debouncedSearchTerm = useDebounce(searchTerm, 300);
 
-    // Memoized function to fetch products from the API
-    const fetchProducts = useCallback(async (pageToFetch) => {
-        setLoading(true);
-        try {
-            const params = {
-                page: pageToFetch,
-                limit: 12,
-                sort_by: sortBy,
+    // --- THIS IS THE CORRECTED LOGIC FOR FETCHING DATA ---
+
+    // Primary effect: This runs ONLY when a filter changes (category, sort, or search).
+    // It always fetches page 1 of the new filtered results.
+    useEffect(() => {
+        const fetchFilteredProducts = async () => {
+            setLoading(true);
+            try {
+                const params = {
+                    page: 1, // Always reset to page 1 on a filter change
+                    limit: 12,
+                    sort_by: sortBy,
+                };
+                if (categoryName) {
+                    params.category = categoryName;
+                }
+                if (debouncedSearchTerm) {
+                    params.search = debouncedSearchTerm;
+                }
+
+                const res = await getProducts(params);
+                setProducts(res.data?.products || []);
+                setPagination(res.data?.pagination || { currentPage: 1, totalPages: 1 });
+                setCurrentPage(1); // Explicitly set the current page state to 1
+
+            } catch (error) {
+                console.error("Failed to fetch filtered products:", error);
+                setProducts([]); // Clear products on error
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchFilteredProducts();
+    }, [sortBy, categoryName, debouncedSearchTerm]); // Dependencies: only the filters
+
+    // Secondary effect: This runs ONLY when the user clicks the pagination buttons.
+    useEffect(() => {
+        // We don't want this to run on the initial load, so we check if page is > 1
+        if (currentPage > 1) {
+            const fetchPageData = async () => {
+                setLoading(true);
+                try {
+                    const params = { page: currentPage, limit: 12, sort_by: sortBy };
+                    if (categoryName) params.category = categoryName;
+                    if (debouncedSearchTerm) params.search = debouncedSearchTerm;
+                    
+                    const res = await getProducts(params);
+                    setProducts(res.data?.products || []);
+                    setPagination(res.data?.pagination || { currentPage: 1, totalPages: 1 });
+
+                } catch (error) {
+                    console.error(`Failed to fetch page ${currentPage}:`, error);
+                } finally {
+                    setLoading(false);
+                }
             };
-            // Only add the category to the params if it exists
-            if (categoryName) {
-                params.category = categoryName;
-            }
-            // Only add the search term if it exists
-            if (debouncedSearchTerm) {
-                params.search = debouncedSearchTerm;
-            }
-
-            const res = await getProducts(params);
-            
-            // Defensive checks to prevent crashes from bad API responses
-            setProducts(res.data?.products || []);
-            setPagination(res.data?.pagination || { currentPage: 1, totalPages: 1 });
-            
-        } catch (error) {
-            console.error("Failed to fetch products:", error);
-            setProducts([]); // Reset to empty array on error
-        } finally {
-            setLoading(false);
+            fetchPageData();
         }
-    }, [sortBy, categoryName, debouncedSearchTerm]); // Dependencies for the fetch function
-
-    // Effect to fetch products when the page number changes
-    useEffect(() => {
-        fetchProducts(currentPage);
-    }, [currentPage, fetchProducts]);
-
-    // Effect to reset to page 1 whenever a filter changes
-    useEffect(() => {
-        if (currentPage !== 1) {
-            setCurrentPage(1);
-        } else {
-            // If we are already on page 1, we still need to trigger a refetch
-            fetchProducts(1);
-        }
-    }, [sortBy, categoryName, debouncedSearchTerm]);
+    }, [currentPage]); // Dependency: only the page number
 
     return (
         <div className="px-6 py-6">
