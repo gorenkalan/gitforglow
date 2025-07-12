@@ -16,12 +16,11 @@ use App\Config;
 
 /**
  * Builds the complete product cache by combining data from the 'products'
- * and 'inventory' sheets in Google Sheets.
+ * and 'inventory' sheets, including stock levels.
  */
 function build_products_cache() {
     $sheetsService = new GoogleSheetsService();
     
-    // Fetch raw data from both sheets
     $productsData = $sheetsService->getSheetData(Config::get('GOOGLE_SHEET_NAME_PRODUCTS'));
     $inventoryData = $sheetsService->getSheetData(Config::get('GOOGLE_SHEET_NAME_INVENTORY'));
 
@@ -29,30 +28,30 @@ function build_products_cache() {
     $inventoryByProductId = [];
     foreach ($inventoryData as $item) {
         $productId = $item['productId'] ?? null;
-        if (!$productId) continue; // Skip inventory items with no productId
+        if (!$productId) continue;
 
         if (!isset($inventoryByProductId[$productId])) {
             $inventoryByProductId[$productId] = [];
         }
 
+        // --- THE CRITICAL CHANGE ---
+        // We now read the 'stock' column and save it with each variation.
         $inventoryByProductId[$productId][] = [
             'variationId' => $item['variationId'] ?? null,
             'colorName' => $item['colorName'] ?? 'Default',
             'colorHex' => $item['colorHex'] ?? '#FFFFFF',
             'imageUrl' => $item['imageUrl'] ?? '',
+            'stock' => isset($item['stock']) ? (int)$item['stock'] : 0, // Read the stock value
         ];
     }
 
     $combinedProducts = [];
-    // Loop through ALL products from the main products sheet
     foreach ($productsData as $product) {
         $productId = $product['id'] ?? null;
-        if (!$productId) continue; // Skip products with no ID
+        if (!$productId) continue;
 
-        // Get the variations for this product. If none exist, default to an empty array.
         $variations = $inventoryByProductId[$productId] ?? [];
         
-        // Add the product to our cache array
         $combinedProducts[] = [
             'id' => $productId,
             'name' => $product['name'] ?? 'No Name',
@@ -66,7 +65,6 @@ function build_products_cache() {
         ];
     }
     
-    // Write the complete, combined list to the cache file
     $cacheDir = __DIR__ . '/../cache/';
     if (!is_dir($cacheDir)) {
         mkdir($cacheDir, 0775, true);
@@ -77,7 +75,7 @@ function build_products_cache() {
 // Execute the cache build
 build_products_cache();
 
-// Set a success message in the session and redirect back to the admin dashboard
+// Redirect back with a success message
 $_SESSION['cache_message'] = "Product cache has been successfully refreshed from Google Sheets.";
 header('Location: index.php');
 exit;

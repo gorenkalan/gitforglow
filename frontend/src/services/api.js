@@ -1,27 +1,30 @@
 import axios from 'axios';
 
-// This URL is correct and stays the same.
+// This URL is correct and points to your backend API directory.
 const API_BASE_URL = 'http://localhost/glow_ecommerce/backend/api/';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
 });
 
+// This is required for CORS to work with PHP sessions.
 api.defaults.withCredentials = true;
 
 // ==========================================================
-// === THE FINAL FIX IS HERE ===
-// We let Axios build the entire query string from a single params object.
-// This is the most reliable way.
+// === THIS IS THE FINAL, COMBINED, AND CORRECT LOGIC ===
 // ==========================================================
 
+/**
+ * For GET requests:
+ * We pass all parameters, including the static 'endpoint', inside a single
+ * `params` object. Axios will build the correct query string from this.
+ * This is the logic that fixes the "products not loading" issue.
+ */
 export const getProducts = (params) => {
-  // We call index.php with NO query string here.
-  // Instead, we add 'endpoint' to the params object that Axios will build.
   return api.get('index.php', {
     params: {
-      endpoint: 'products', // Add the static endpoint parameter
-      ...params,           // Merge any other dynamic params (like category, sort_by, etc.)
+      endpoint: 'products',
+      ...params,
     },
   });
 };
@@ -34,9 +37,17 @@ export const getCategories = () => {
   });
 };
 
-// The POST requests were already correct, but we'll re-verify them.
-// The endpoint is in the query string, and the data is the second argument.
-export const createOrder = (orderData) => api.post('index.php?endpoint=create-order', orderData);
-export const verifyPayment = (paymentData) => api.post('index.php?endpoint=verify-payment', paymentData);
+/**
+ * For POST requests:
+ * We put the endpoint directly in the URL's query string and pass the data
+ * as the second argument. This is the simple, direct method that we know works.
+ */
+export const createOrder = (orderData) => {
+  return api.post('index.php?endpoint=create-order', orderData);
+};
+
+export const verifyPayment = (paymentData) => {
+  return api.post('index.php?endpoint=verify-payment', paymentData);
+};
 
 export default api;

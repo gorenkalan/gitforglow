@@ -1,0 +1,14 @@
+git add .
+git commit -m "1. backend/src/OrderService.php (New File)
+This is a new service dedicated to managing order files on the server.
+Path: backend/src/OrderService.php2. backend/src/GoogleSheetsService.php (Updated)
+This service is updated with the writeOrdersBatch function. The rest of the functions from the old version (getSheetData, verifyAndUpdateStock) are still required and should remain in this file.
+Path: backend/src/GoogleSheetsService.php3. backend/api/index.php (Updated)
+This file is now updated to use the new OrderService instead of writing directly to Google Sheets on every order.
+Path: backend/api/index.php4. backend/admin/index.php (Updated)
+This is the final, complete version of the admin dashboard with the new order syncing functionality.
+Path: backend/admin/index.php5. backend/admin/update_cache.php (Minor Change)
+We just need to add a redirect back to the admin page with a success message.
+Path: backend/admin/update_cache.php"
+
+git push origin main

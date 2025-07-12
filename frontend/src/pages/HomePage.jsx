@@ -10,9 +10,6 @@ const HomePage = () => {
     const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    // --- THE FIX: Match Category Names to Your Sheet ---
-    // We will use lowercase keys here and convert the sheet data to lowercase
-    // when looking up images. This is more robust.
     const categoryImages = {
         creams: 'https://images.pexels.com/photos/3993398/pexels-photo-3993398.jpeg',
         serums: 'https://images.unsplash.com/photo-1598528738936-c50861cc75a9',
@@ -26,7 +23,6 @@ const HomePage = () => {
         'tools & accessories': 'https://dummyimage.com/250/cccccc/969696&text=Tools',
         'oral care': 'https://dummyimage.com/250/cccccc/969696&text=Oral+Care',
         'bath & shower': 'https://dummyimage.com/250/cccccc/969696&text=Bath',
-        // Add a default fallback image
         default: 'https://dummyimage.com/250/cccccc/969696&text=Category',
     };
 
@@ -38,15 +34,17 @@ const HomePage = () => {
                 const productsRes = await getProducts({ limit: 500 });
                 const categoriesRes = await getCategories();
 
-                // Set popular products by filtering the full list
+                // --- THE FIX ---
+                // Correctly access the nested .products array from the API response
                 if (productsRes.data && Array.isArray(productsRes.data.products)) {
-                    const popular = productsRes.data.products
+                    const allProducts = productsRes.data.products;
+                    const popular = allProducts
                         .filter(p => Array.isArray(p.tags) && p.tags.includes('popular') && Array.isArray(p.variations) && p.variations.length > 0)
                         .slice(0, 8);
                     setPopularProducts(popular);
                 }
 
-                // Set categories
+                // Correctly access the nested .categories array
                 if (categoriesRes.data && Array.isArray(categoriesRes.data.categories)) {
                     setCategories(categoriesRes.data.categories);
                 }
@@ -69,38 +67,26 @@ const HomePage = () => {
             <div>
                 <div className="flex justify-between items-center mb-6">
                     <h2 className="font-bold text-sm tracking-wider uppercase">Categories</h2>
-                    <Link to="/products" className="text-gray-500 hover:text-accent">
+                    <Link to="/categories" className="text-gray-500 hover:text-accent">
                         <ChevronRight size={24} />
                     </Link>
                 </div>
-                {/* This section will now render correctly as long as the API returns any categories */}
                 {categories.length > 0 ? (
                     <div className="flex space-x-6 overflow-x-auto scrollbar-hide pb-4">
                         {categories.map((category) => {
-                            // Convert category name to a key for the images object
                             const imageKey = category.toLowerCase();
-                            const categoryLink = encodeURIComponent(category.toLowerCase());
+                            const categoryLink = encodeURIComponent(imageKey);
                             return (
-                                <Link
-                                    key={category}
-                                    to={`/category/${categoryLink}`}
-                                    className="flex-shrink-0 flex flex-col items-center w-20 group"
-                                >
+                                <Link key={category} to={`/category/${categoryLink}`} className="flex-shrink-0 flex flex-col items-center w-20 group">
                                     <div className="w-16 h-16 rounded-full overflow-hidden mb-3 border-2 border-gray-200 group-hover:border-accent transition-colors">
-                                        <img 
-                                            src={categoryImages[imageKey] || categoryImages.default} 
-                                            alt={category} 
-                                            className="w-full h-full object-cover" 
-                                        />
+                                        <img src={categoryImages[imageKey] || categoryImages.default} alt={category} className="w-full h-full object-cover" />
                                     </div>
                                     <span className="text-sm font-medium text-center">{category}</span>
                                 </Link>
                             );
                         })}
                     </div>
-                ) : (
-                    <p className="text-gray-500">No categories found.</p>
-                )}
+                ) : ( <p className="text-gray-500">No categories found.</p> )}
             </div>
 
             {/* Popular Section */}
@@ -111,16 +97,13 @@ const HomePage = () => {
                         <ChevronRight size={24} />
                     </Link>
                 </div>
-                {/* This section will render as long as there are popular products */}
                 {popularProducts.length > 0 ? (
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8">
                         {popularProducts.map((product) => (
                             <ProductCard key={product.id} product={product} />
                         ))}
                     </div>
-                ) : (
-                    <p className="text-gray-500">No popular products to display.</p>
-                )}
+                ) : ( <p className="text-gray-500">No popular products to display.</p> )}
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 <?php
 // This file has ONE job: to send the correct CORS headers.
-// It NO LONGER depends on the Config class to avoid load order problems.
+// We are explicitly setting it to 5173, which is Vite's default port.
 
 header("Access-Control-Allow-Origin: http://localhost:5173");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS");

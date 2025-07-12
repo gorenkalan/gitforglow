@@ -4,6 +4,7 @@ backend/.env
 backend/credentials.json
 backend/orders/
 backend/cache/
+glow_ecommerce.zip
 
 # Frontend Dependencies
 frontend/node_modules/

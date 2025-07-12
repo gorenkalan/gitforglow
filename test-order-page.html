@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .response {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .error {
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+        }
+        .success {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Glow Ecommerce API Test</h1>
+        
+        <!-- Test 1: Diagnostics -->
+        <div class="test-section">
+            <h2>1. Run Diagnostics</h2>
+            <p>This will check all configurations and show what might be wrong.</p>
+            <button onclick="runDiagnostics()">Run Diagnostics</button>
+            <div id="diagnostics-response" class="response" style="display:none;"></div>
+        </div>
+
+        <!-- Test 2: Direct Telegram Test -->
+        <div class="test-section">
+            <h2>2. Test Telegram Direct</h2>
+            <p>This will send a test message directly to your Telegram.</p>
+            <button onclick="testTelegramDirect()">Test Telegram</button>
+            <div id="telegram-response" class="response" style="display:none;"></div>
+        </div>
+
+        <!-- Test 3: Simple Order -->
+        <div class="test-section">
+            <h2>3. Create Test Order</h2>
+            <p>Fill in the details and submit a test order.</p>
+            
+            <div class="form-group">
+                <label>Customer Name:</label>
+                <input type="text" id="customer-name" value="Test Customer">
+            </div>
+            
+            <div class="form-group">
+                <label>Phone:</label>
+                <input type="tel" id="customer-phone" value="+1234567890">
+            </div>
+            
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" id="customer-email" value="test@example.com">
+            </div>
+            
+            <button onclick="createTestOrder()">Create Order</button>
+            <div id="order-response" class="response" style="display:none;"></div>
+        </div>
+
+        <!-- Test 4: Check PHP Error Log -->
+        <div class="test-section">
+            <h2>4. PHP Configuration</h2>
+            <button onclick="checkPHPInfo()">Check PHP Info</button>
+            <div id="php-response" class="response" style="display:none;"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost/glow_ecommerce/backend/api/index.php';
+        
+        async function makeRequest(endpoint, method = 'GET', data = null) {
+            const url = `${API_BASE}?endpoint=${endpoint}`;
+            const options = {
+                method: method,
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                credentials: 'include'
+            };
+            
+            if (data && method !== 'GET') {
+                options.body = JSON.stringify(data);
+            }
+            
+            try {
+                console.log(`Making request to: ${url}`);
+                console.log('Request options:', options);
+                
+                const response = await fetch(url, options);
+                const text = await response.text();
+                
+                console.log('Response status:', response.status);
+                console.log('Response text:', text);
+                
+                let jsonData;
+                try {
+                    jsonData = JSON.parse(text);
+                } catch (e) {
+                    jsonData = { raw_response: text, parse_error: e.message };
+                }
+                
+                return {
+                    status: response.status,
+                    ok: response.ok,
+                    data: jsonData
+                };
+            } catch (error) {
+                console.error('Request error:', error);
+                return {
+                    status: 0,
+                    ok: false,
+                    data: { error: error.message }
+                };
+            }
+        }
+        
+        async function runDiagnostics() {
+            const responseDiv = document.getElementById('diagnostics-response');
+            responseDiv.style.display = 'block';
+            responseDiv.innerHTML = 'Running diagnostics...';
+            
+            const testData = {
+                total: 100,
+                form_timestamp: Date.now(),
+                hp_email: '',
+                customer_info: {
+                    name: 'Test User',
+                    phone: '+1234567890',
+                    email: 'test@example.com'
+                },
+                items: [{
+                    id: 'TEST001',
+                    name: 'Test Product',
+                    variationId: 'default',
+                    quantity: 1,
+                    price: 100
+                }]
+            };
+            
+            const result = await makeRequest('test-order', 'POST', testData);
+            
+            if (result.ok) {
+                responseDiv.className = 'response success';
+            } else {
+                responseDiv.className = 'response error';
+            }
+            
+            responseDiv.innerHTML = JSON.stringify(result.data, null, 2);
+        }
+        
+        async function testTelegramDirect() {
+            const responseDiv = document.getElementById('telegram-response');
+            responseDiv.style.display = 'block';
+            responseDiv.innerHTML = 'Testing Telegram...';
+            
+            const result = await makeRequest('test-telegram-direct', 'GET');
+            
+            if (result.ok && result.data.telegram_response?.response?.ok) {
+                responseDiv.className = 'response success';
+                responseDiv.innerHTML = 'Telegram message sent successfully!\n\n' + 
+                    JSON.stringify(result.data, null, 2);
+            } else {
+                responseDiv.className = 'response error';
+                responseDiv.innerHTML = 'Telegram test failed:\n\n' + 
+                    JSON.stringify(result.data, null, 2);
+            }
+        }
+        
+        async function createTestOrder() {
+            const responseDiv = document.getElementById('order-response');
+            responseDiv.style.display = 'block';
+            responseDiv.innerHTML = 'Creating order...';
+            
+            const orderData = {
+                total: 1299.99,
+                form_timestamp: Date.now() - 10000, // 10 seconds ago to pass spam check
+                hp_email: '', // honeypot field
+                customer_info: {
+                    name: document.getElementById('customer-name').value,
+                    phone: document.getElementById('customer-phone').value,
+                    email: document.getElementById('customer-email').value,
+                    address: '123 Test Street'
+                },
+                items: [
+                    {
+                        id: 'PROD001',
+                        name: 'Test Face Cream',
+                        variationId: '50ml',
+                        quantity: 2,
+                        price: 399.99,
+                        basePrice: 399.99
+                    },
+                    {
+                        id: 'PROD002',
+                        name: 'Test Serum',
+                        variationId: '30ml',
+                        quantity: 1,
+                        price: 499.99,
+                        basePrice: 499.99
+                    }
+                ]
+            };
+            
+            console.log('Sending order data:', orderData);
+            
+            const result = await makeRequest('create-order', 'POST', orderData);
+            
+            if (result.ok) {
+                responseDiv.className = 'response success';
+                responseDiv.innerHTML = 'Order created successfully!\n\n' + 
+                    JSON.stringify(result.data, null, 2);
+            } else {
+                responseDiv.className = 'response error';
+                responseDiv.innerHTML = 'Order creation failed:\n\n' + 
+                    JSON.stringify(result.data, null, 2);
+            }
+        }
+        
+        async function checkPHPInfo() {
+            const responseDiv = document.getElementById('php-response');
+            responseDiv.style.display = 'block';
+            responseDiv.innerHTML = `
+PHP Error Log Location (Windows XAMPP):
+- Check: C:\\xampp\\php\\logs\\php_error_log
+- Or: C:\\xampp\\apache\\logs\\error.log
+
+To enable error logging, ensure these settings in php.ini:
+error_reporting = E_ALL
+log_errors = On
+error_log = "C:\\xampp\\php\\logs\\php_error_log"
+
+After making changes, restart Apache.
+            `;
+        }
+    </script>
+</body>
+</html>

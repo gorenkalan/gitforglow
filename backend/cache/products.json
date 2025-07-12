@@ -15,19 +15,22 @@
                 "variationId": "1-pink",
                 "colorName": "Light Pink",
                 "colorHex": "#FFB6C1",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFB6C1&text=Hydrating Face Cream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFB6C1&text=Hydrating Face Cream",
+                "stock": 0
             },
             {
                 "variationId": "1-yellow",
                 "colorName": "Khaki",
                 "colorHex": "#F0E68C",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/F0E68C&text=Hydrating Face Cream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/F0E68C&text=Hydrating Face Cream",
+                "stock": 1
             },
             {
                 "variationId": "1-blue",
                 "colorName": "Sky Blue",
                 "colorHex": "#87CEEB",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/87CEEB&text=Hydrating Face Cream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/87CEEB&text=Hydrating Face Cream",
+                "stock": 2
             }
         ]
     },
@@ -47,13 +50,15 @@
                 "variationId": "2-lavender",
                 "colorName": "Lavender",
                 "colorHex": "#E6E6FA",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/E6E6FA&text=Anti-Aging Night Cream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/E6E6FA&text=Anti-Aging Night Cream",
+                "stock": 72
             },
             {
                 "variationId": "2-mint",
                 "colorName": "Mint Green",
                 "colorHex": "#98FF98",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/98FF98&text=Anti-Aging Night Cream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/98FF98&text=Anti-Aging Night Cream",
+                "stock": 60
             }
         ]
     },
@@ -73,13 +78,15 @@
                 "variationId": "3-orange",
                 "colorName": "Peach",
                 "colorHex": "#FFE5B4",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFE5B4&text=Vitamin C Day Cream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFE5B4&text=Vitamin C Day Cream",
+                "stock": 110
             },
             {
                 "variationId": "3-white",
                 "colorName": "Ivory",
                 "colorHex": "#FFFFF0",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFF0&text=Vitamin C Day Cream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFF0&text=Vitamin C Day Cream",
+                "stock": 90
             }
         ]
     },
@@ -99,13 +106,15 @@
                 "variationId": "4-blue",
                 "colorName": "Powder Blue",
                 "colorHex": "#B0E0E6",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/B0E0E6&text=Firming Eye Serum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/B0E0E6&text=Firming Eye Serum",
+                "stock": 150
             },
             {
                 "variationId": "4-white",
                 "colorName": "Alabaster",
                 "colorHex": "#F0F8FF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/F0F8FF&text=Firming Eye Serum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/F0F8FF&text=Firming Eye Serum",
+                "stock": 120
             }
         ]
     },
@@ -125,13 +134,15 @@
                 "variationId": "5-beige",
                 "colorName": "Beige",
                 "colorHex": "#F5F5DC",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/F5F5DC&text=Revitalizing Body Lotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/F5F5DC&text=Revitalizing Body Lotion",
+                "stock": 200
             },
             {
                 "variationId": "5-green",
                 "colorName": "Sage Green",
                 "colorHex": "#9DC183",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/9DC183&text=Revitalizing Body Lotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/9DC183&text=Revitalizing Body Lotion",
+                "stock": 180
             }
         ]
     },
@@ -151,7 +162,8 @@
                 "variationId": "6-default",
                 "colorName": "Gentle Cleansing Milk",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GentleCleansingMilk"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GentleCleansingMilk",
+                "stock": 1
             }
         ]
     },
@@ -171,7 +183,8 @@
                 "variationId": "7-default",
                 "colorName": "Collagen Boost Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CollagenBoostCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CollagenBoostCream",
+                "stock": 1
             }
         ]
     },
@@ -191,7 +204,8 @@
                 "variationId": "8-default",
                 "colorName": "Repairing Foot Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=RepairingFootCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=RepairingFootCream",
+                "stock": 1
             }
         ]
     },
@@ -211,7 +225,8 @@
                 "variationId": "9-default",
                 "colorName": "Hand Moisturizer SPF 20",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HandMoisturizerSPF20"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HandMoisturizerSPF20",
+                "stock": 1
             }
         ]
     },
@@ -231,7 +246,8 @@
                 "variationId": "10-default",
                 "colorName": "Sensitive Skin Balm",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SensitiveSkinBalm"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SensitiveSkinBalm",
+                "stock": 1
             }
         ]
     },
@@ -251,7 +267,8 @@
                 "variationId": "11-default",
                 "colorName": "Brightening Face Oil",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BrighteningFaceOil"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BrighteningFaceOil",
+                "stock": 1
             }
         ]
     },
@@ -271,7 +288,8 @@
                 "variationId": "12-default",
                 "colorName": "Acne Treatment Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AcneTreatmentCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AcneTreatmentCream",
+                "stock": 0
             }
         ]
     },
@@ -291,13 +309,15 @@
                 "variationId": "13-light",
                 "colorName": "Light Tint",
                 "colorHex": "#FDF5E6",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FDF5E6&text=Daily Moisturizer with SPF"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FDF5E6&text=Daily Moisturizer with SPF",
+                "stock": 90
             },
             {
                 "variationId": "13-medium",
                 "colorName": "Medium Tint",
                 "colorHex": "#DEB887",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/DEB887&text=Daily Moisturizer with SPF"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/DEB887&text=Daily Moisturizer with SPF",
+                "stock": 75
             }
         ]
     },
@@ -317,7 +337,8 @@
                 "variationId": "14-default",
                 "colorName": "Anti-Pollution Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-PollutionCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-PollutionCream",
+                "stock": 1
             }
         ]
     },
@@ -337,7 +358,8 @@
                 "variationId": "15-default",
                 "colorName": "Overnight Resurfacing Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=OvernightResurfacingCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=OvernightResurfacingCream",
+                "stock": 1
             }
         ]
     },
@@ -357,7 +379,8 @@
                 "variationId": "16-default",
                 "colorName": "Lip Plumping Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LipPlumpingCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LipPlumpingCream",
+                "stock": 1
             }
         ]
     },
@@ -377,7 +400,8 @@
                 "variationId": "17-default",
                 "colorName": "Neck & Decolletage Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Neck&DecolletageCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Neck&DecolletageCream",
+                "stock": 1
             }
         ]
     },
@@ -397,7 +421,8 @@
                 "variationId": "18-default",
                 "colorName": "Prebiotic Face Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PrebioticFaceCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PrebioticFaceCream",
+                "stock": 1
             }
         ]
     },
@@ -417,7 +442,8 @@
                 "variationId": "19-default",
                 "colorName": "Barrier Repair Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BarrierRepairCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BarrierRepairCream",
+                "stock": 1
             }
         ]
     },
@@ -437,7 +463,8 @@
                 "variationId": "20-default",
                 "colorName": "Post-Shave Balm",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Post-ShaveBalm"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Post-ShaveBalm",
+                "stock": 1
             }
         ]
     },
@@ -457,7 +484,8 @@
                 "variationId": "21-default",
                 "colorName": "Dark Spot Corrector Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DarkSpotCorrectorCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DarkSpotCorrectorCream",
+                "stock": 1
             }
         ]
     },
@@ -477,7 +505,8 @@
                 "variationId": "22-default",
                 "colorName": "Epidermal Growth Factor Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EpidermalGrowthFactorCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EpidermalGrowthFactorCream",
+                "stock": 1
             }
         ]
     },
@@ -497,7 +526,8 @@
                 "variationId": "23-default",
                 "colorName": "Kids Sunscreen Cream SPF 50",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=KidsSunscreenCreamSPF50"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=KidsSunscreenCreamSPF50",
+                "stock": 1
             }
         ]
     },
@@ -517,7 +547,8 @@
                 "variationId": "24-default",
                 "colorName": "Mineral Tinted Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MineralTintedCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MineralTintedCream",
+                "stock": 1
             }
         ]
     },
@@ -537,7 +568,8 @@
                 "variationId": "25-default",
                 "colorName": "Rosacea Redness Relief Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=RosaceaRednessReliefCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=RosaceaRednessReliefCream",
+                "stock": 1
             }
         ]
     },
@@ -557,7 +589,8 @@
                 "variationId": "26-default",
                 "colorName": "Pore Minimizing Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PoreMinimizingCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PoreMinimizingCream",
+                "stock": 1
             }
         ]
     },
@@ -577,7 +610,8 @@
                 "variationId": "27-default",
                 "colorName": "Ceramide Rich Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CeramideRichCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CeramideRichCream",
+                "stock": 1
             }
         ]
     },
@@ -597,7 +631,8 @@
                 "variationId": "28-default",
                 "colorName": "Anti-Fungal Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-FungalCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-FungalCream",
+                "stock": 1
             }
         ]
     },
@@ -617,7 +652,8 @@
                 "variationId": "29-default",
                 "colorName": "Vitamin K Bruise Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=VitaminKBruiseCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=VitaminKBruiseCream",
+                "stock": 1
             }
         ]
     },
@@ -637,7 +673,8 @@
                 "variationId": "30-default",
                 "colorName": "Eczema Therapy Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EczemaTherapyCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EczemaTherapyCream",
+                "stock": 1
             }
         ]
     },
@@ -658,7 +695,8 @@
                 "variationId": "31-clear",
                 "colorName": "Clear",
                 "colorHex": "#FFFFFF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Hyaluronic Acid Serum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Hyaluronic Acid Serum",
+                "stock": 200
             }
         ]
     },
@@ -678,13 +716,15 @@
                 "variationId": "32-yellow",
                 "colorName": "Bright Yellow",
                 "colorHex": "#FFFF00",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFF00&text=Vitamin C Brightening Serum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFF00&text=Vitamin C Brightening Serum",
+                "stock": 150
             },
             {
                 "variationId": "32-orange",
                 "colorName": "Orange",
                 "colorHex": "#FFA500",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Vitamin C Brightening Serum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Vitamin C Brightening Serum",
+                "stock": 130
             }
         ]
     },
@@ -704,7 +744,8 @@
                 "variationId": "33-gold",
                 "colorName": "Gold",
                 "colorHex": "#FFD700",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFD700&text=Retinol Anti-Aging Serum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFD700&text=Retinol Anti-Aging Serum",
+                "stock": 180
             }
         ]
     },
@@ -725,13 +766,15 @@
                 "variationId": "34-green",
                 "colorName": "Pale Green",
                 "colorHex": "#98FB98",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/98FB98&text=Niacinamide Pore Serum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/98FB98&text=Niacinamide Pore Serum",
+                "stock": 121
             },
             {
                 "variationId": "34-blue",
                 "colorName": "Cyan",
                 "colorHex": "#00FFFF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/00FFFF&text=Niacinamide Pore Serum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/00FFFF&text=Niacinamide Pore Serum",
+                "stock": 98
             }
         ]
     },
@@ -751,7 +794,8 @@
                 "variationId": "35-default",
                 "colorName": "Peptide Complex Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PeptideComplexSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PeptideComplexSerum",
+                "stock": 1
             }
         ]
     },
@@ -771,7 +815,8 @@
                 "variationId": "36-default",
                 "colorName": "Alpha Arbutin Dark Spot Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AlphaArbutinDarkSpotSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AlphaArbutinDarkSpotSerum",
+                "stock": 1
             }
         ]
     },
@@ -791,7 +836,8 @@
                 "variationId": "37-default",
                 "colorName": "Salicylic Acid Exfoliating Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SalicylicAcidExfoliatingSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SalicylicAcidExfoliatingSerum",
+                "stock": 1
             }
         ]
     },
@@ -811,7 +857,8 @@
                 "variationId": "38-default",
                 "colorName": "Growth Factor Recovery Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GrowthFactorRecoverySerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GrowthFactorRecoverySerum",
+                "stock": 1
             }
         ]
     },
@@ -831,7 +878,8 @@
                 "variationId": "39-default",
                 "colorName": "Ferulic Acid Antioxidant Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FerulicAcidAntioxidantSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FerulicAcidAntioxidantSerum",
+                "stock": 1
             }
         ]
     },
@@ -851,7 +899,8 @@
                 "variationId": "40-default",
                 "colorName": "Glycolic Acid Resurfacing Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlycolicAcidResurfacingSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlycolicAcidResurfacingSerum",
+                "stock": 1
             }
         ]
     },
@@ -871,7 +920,8 @@
                 "variationId": "41-default",
                 "colorName": "Probiotic Balancing Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ProbioticBalancingSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ProbioticBalancingSerum",
+                "stock": 1
             }
         ]
     },
@@ -891,7 +941,8 @@
                 "variationId": "42-default",
                 "colorName": "AHA\/BHA Peeling Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AHA\/BHAPeelingSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AHA\/BHAPeelingSerum",
+                "stock": 1
             }
         ]
     },
@@ -911,7 +962,8 @@
                 "variationId": "43-default",
                 "colorName": "Copper Peptide Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CopperPeptideSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CopperPeptideSerum",
+                "stock": 1
             }
         ]
     },
@@ -931,7 +983,8 @@
                 "variationId": "44-default",
                 "colorName": "Epidermal Repair Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EpidermalRepairSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EpidermalRepairSerum",
+                "stock": 1
             }
         ]
     },
@@ -951,7 +1004,8 @@
                 "variationId": "45-default",
                 "colorName": "Azelaic Acid Redness Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AzelaicAcidRednessSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AzelaicAcidRednessSerum",
+                "stock": 1
             }
         ]
     },
@@ -971,7 +1025,8 @@
                 "variationId": "46-default",
                 "colorName": "Lactic Acid Brightening Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LacticAcidBrighteningSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LacticAcidBrighteningSerum",
+                "stock": 1
             }
         ]
     },
@@ -991,7 +1046,8 @@
                 "variationId": "47-default",
                 "colorName": "Stem Cell Anti-Aging Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=StemCellAnti-AgingSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=StemCellAnti-AgingSerum",
+                "stock": 1
             }
         ]
     },
@@ -1011,7 +1067,8 @@
                 "variationId": "48-default",
                 "colorName": "Barrier Strengthening Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BarrierStrengtheningSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BarrierStrengtheningSerum",
+                "stock": 1
             }
         ]
     },
@@ -1031,7 +1088,8 @@
                 "variationId": "49-default",
                 "colorName": "Green Tea Antioxidant Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GreenTeaAntioxidantSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GreenTeaAntioxidantSerum",
+                "stock": 1
             }
         ]
     },
@@ -1051,7 +1109,8 @@
                 "variationId": "50-default",
                 "colorName": "Blue Tansy Calming Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BlueTansyCalmingSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BlueTansyCalmingSerum",
+                "stock": 1
             }
         ]
     },
@@ -1071,7 +1130,8 @@
                 "variationId": "51-default",
                 "colorName": "Resveratrol Firming Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ResveratrolFirmingSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ResveratrolFirmingSerum",
+                "stock": 1
             }
         ]
     },
@@ -1091,7 +1151,8 @@
                 "variationId": "52-default",
                 "colorName": "Bakuchiol Wrinkle Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BakuchiolWrinkleSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BakuchiolWrinkleSerum",
+                "stock": 1
             }
         ]
     },
@@ -1111,7 +1172,8 @@
                 "variationId": "53-default",
                 "colorName": "Phyto-Retinol Repair Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Phyto-RetinolRepairSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Phyto-RetinolRepairSerum",
+                "stock": 1
             }
         ]
     },
@@ -1131,7 +1193,8 @@
                 "variationId": "54-default",
                 "colorName": "Omega Fatty Acid Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=OmegaFattyAcidSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=OmegaFattyAcidSerum",
+                "stock": 1
             }
         ]
     },
@@ -1151,7 +1214,8 @@
                 "variationId": "55-default",
                 "colorName": "Tranexamic Acid Spot Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TranexamicAcidSpotSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TranexamicAcidSpotSerum",
+                "stock": 1
             }
         ]
     },
@@ -1171,7 +1235,8 @@
                 "variationId": "56-default",
                 "colorName": "Ginseng Youth Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GinsengYouthSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GinsengYouthSerum",
+                "stock": 1
             }
         ]
     },
@@ -1191,7 +1256,8 @@
                 "variationId": "57-default",
                 "colorName": "Argireline Wrinkle Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ArgirelineWrinkleSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ArgirelineWrinkleSerum",
+                "stock": 1
             }
         ]
     },
@@ -1211,7 +1277,8 @@
                 "variationId": "58-default",
                 "colorName": "Polyglutamic Acid Hydration Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PolyglutamicAcidHydrationSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PolyglutamicAcidHydrationSerum",
+                "stock": 1
             }
         ]
     },
@@ -1231,7 +1298,8 @@
                 "variationId": "59-default",
                 "colorName": "Liposome Delivery Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LiposomeDeliverySerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LiposomeDeliverySerum",
+                "stock": 1
             }
         ]
     },
@@ -1251,7 +1319,8 @@
                 "variationId": "60-default",
                 "colorName": "Mushroom Complex Soothing Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MushroomComplexSoothingSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MushroomComplexSoothingSerum",
+                "stock": 1
             }
         ]
     },
@@ -1272,7 +1341,8 @@
                 "variationId": "61-white",
                 "colorName": "White",
                 "colorHex": "#FFFFFF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Gentle Foaming Cleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Gentle Foaming Cleanser",
+                "stock": 208
             }
         ]
     },
@@ -1292,7 +1362,8 @@
                 "variationId": "62-cream",
                 "colorName": "Cream",
                 "colorHex": "#FFFDD0",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFDD0&text=Hydrating Cream Cleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFDD0&text=Hydrating Cream Cleanser",
+                "stock": 180
             }
         ]
     },
@@ -1312,7 +1383,8 @@
                 "variationId": "63-blue",
                 "colorName": "Light Blue",
                 "colorHex": "#ADD8E6",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/ADD8E6&text=Balancing Gel Cleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/ADD8E6&text=Balancing Gel Cleanser",
+                "stock": 160
             }
         ]
     },
@@ -1332,7 +1404,8 @@
                 "variationId": "64-pink",
                 "colorName": "Light Pink",
                 "colorHex": "#FFB6C1",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFB6C1&text=Micellar Water Makeup Remover"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFB6C1&text=Micellar Water Makeup Remover",
+                "stock": 250
             }
         ]
     },
@@ -1352,7 +1425,8 @@
                 "variationId": "65-brown",
                 "colorName": "Amber",
                 "colorHex": "#FFBF00",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFBF00&text=Oil-to-Milk Cleansing Oil"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFBF00&text=Oil-to-Milk Cleansing Oil",
+                "stock": 140
             }
         ]
     },
@@ -1372,7 +1446,8 @@
                 "variationId": "66-default",
                 "colorName": "Charcoal Deep Pore Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CharcoalDeepPoreCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CharcoalDeepPoreCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1392,7 +1467,8 @@
                 "variationId": "67-default",
                 "colorName": "Enzyme Powder Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EnzymePowderCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EnzymePowderCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1412,7 +1488,8 @@
                 "variationId": "68-default",
                 "colorName": "Salicylic Acid Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SalicylicAcidCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SalicylicAcidCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1432,7 +1509,8 @@
                 "variationId": "69-default",
                 "colorName": "Vitamin C Brightening Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=VitaminCBrighteningCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=VitaminCBrighteningCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1452,7 +1530,8 @@
                 "variationId": "70-default",
                 "colorName": "Clay Purifying Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ClayPurifyingCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ClayPurifyingCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1472,7 +1551,8 @@
                 "variationId": "71-default",
                 "colorName": "Probiotic Cleansing Milk",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ProbioticCleansingMilk"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ProbioticCleansingMilk",
+                "stock": 1
             }
         ]
     },
@@ -1492,7 +1572,8 @@
                 "variationId": "72-default",
                 "colorName": "Soothing Oat Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SoothingOatCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SoothingOatCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1512,7 +1593,8 @@
                 "variationId": "73-default",
                 "colorName": "Glycolic Acid Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlycolicAcidCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlycolicAcidCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1532,7 +1614,8 @@
                 "variationId": "74-default",
                 "colorName": "Rosehip Oil Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=RosehipOilCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=RosehipOilCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1552,7 +1635,8 @@
                 "variationId": "75-default",
                 "colorName": "Tea Tree Oil Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TeaTreeOilCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TeaTreeOilCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1572,7 +1656,8 @@
                 "variationId": "76-default",
                 "colorName": "Prebiotic Foaming Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PrebioticFoamingCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PrebioticFoamingCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1592,7 +1677,8 @@
                 "variationId": "77-default",
                 "colorName": "Cucumber Refreshing Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CucumberRefreshingCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CucumberRefreshingCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1612,7 +1698,8 @@
                 "variationId": "78-default",
                 "colorName": "Aloe Vera Calming Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AloeVeraCalmingCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AloeVeraCalmingCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1632,7 +1719,8 @@
                 "variationId": "79-default",
                 "colorName": "Green Tea Antioxidant Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GreenTeaAntioxidantCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GreenTeaAntioxidantCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1652,7 +1740,8 @@
                 "variationId": "80-default",
                 "colorName": "Amino Acid Gentle Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AminoAcidGentleCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AminoAcidGentleCleanser",
+                "stock": 0
             }
         ]
     },
@@ -1672,7 +1761,8 @@
                 "variationId": "81-default",
                 "colorName": "Honey & Oat Exfoliating Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Honey&OatExfoliatingCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Honey&OatExfoliatingCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1692,7 +1782,8 @@
                 "variationId": "82-default",
                 "colorName": "BHA Cleansing Gel",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BHACleansingGel"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BHACleansingGel",
+                "stock": 1
             }
         ]
     },
@@ -1712,7 +1803,8 @@
                 "variationId": "83-default",
                 "colorName": "Vegan Milk Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=VeganMilkCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=VeganMilkCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1732,7 +1824,8 @@
                 "variationId": "84-default",
                 "colorName": "Makeup Melting Balm Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MakeupMeltingBalmCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MakeupMeltingBalmCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1752,7 +1845,8 @@
                 "variationId": "85-default",
                 "colorName": "pH Balanced Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=pHBalancedCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=pHBalancedCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1772,7 +1866,8 @@
                 "variationId": "86-default",
                 "colorName": "Purifying Clay Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PurifyingClayCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PurifyingClayCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1792,7 +1887,8 @@
                 "variationId": "87-default",
                 "colorName": "Blueberry Superfood Cleanser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BlueberrySuperfoodCleanser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BlueberrySuperfoodCleanser",
+                "stock": 1
             }
         ]
     },
@@ -1812,7 +1908,8 @@
                 "variationId": "88-default",
                 "colorName": "Soap-Free Hydrating Wash",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Soap-FreeHydratingWash"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Soap-FreeHydratingWash",
+                "stock": 1
             }
         ]
     },
@@ -1832,7 +1929,8 @@
                 "variationId": "89-default",
                 "colorName": "Enzyme Cleansing Balm",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EnzymeCleansingBalm"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EnzymeCleansingBalm",
+                "stock": 1
             }
         ]
     },
@@ -1852,7 +1950,8 @@
                 "variationId": "90-default",
                 "colorName": "Charcoal Detox Facial Wash",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CharcoalDetoxFacialWash"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CharcoalDetoxFacialWash",
+                "stock": 1
             }
         ]
     },
@@ -1872,7 +1971,8 @@
                 "variationId": "91-clear",
                 "colorName": "Clear",
                 "colorHex": "#FFFFFF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Hydrating Sheet Mask (5-pack)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Hydrating Sheet Mask (5-pack)",
+                "stock": 90
             }
         ]
     },
@@ -1892,7 +1992,8 @@
                 "variationId": "92-green",
                 "colorName": "Forest Green",
                 "colorHex": "#228B22",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/228B22&text=Clay Purifying Mask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/228B22&text=Clay Purifying Mask",
+                "stock": 75
             }
         ]
     },
@@ -1912,7 +2013,8 @@
                 "variationId": "93-yellow",
                 "colorName": "Sun Yellow",
                 "colorHex": "#FFD700",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFD700&text=Vitamin C Brightening Mask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFD700&text=Vitamin C Brightening Mask",
+                "stock": 60
             }
         ]
     },
@@ -1933,7 +2035,8 @@
                 "variationId": "94-purple",
                 "colorName": "Lavender",
                 "colorHex": "#E6E6FA",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/E6E6FA&text=Overnight Sleeping Mask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/E6E6FA&text=Overnight Sleeping Mask",
+                "stock": 98
             }
         ]
     },
@@ -1953,7 +2056,8 @@
                 "variationId": "95-orange",
                 "colorName": "Coral",
                 "colorHex": "#FF7F50",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FF7F50&text=Glow Boosting Peel-Off Mask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FF7F50&text=Glow Boosting Peel-Off Mask",
+                "stock": 50
             }
         ]
     },
@@ -1973,7 +2077,8 @@
                 "variationId": "96-default",
                 "colorName": "Acne Spot Treatment Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AcneSpotTreatmentMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AcneSpotTreatmentMask",
+                "stock": 0
             }
         ]
     },
@@ -1993,7 +2098,8 @@
                 "variationId": "97-default",
                 "colorName": "Anti-Aging Hydrogel Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-AgingHydrogelMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-AgingHydrogelMask",
+                "stock": 0
             }
         ]
     },
@@ -2013,7 +2119,8 @@
                 "variationId": "98-default",
                 "colorName": "Detoxifying Bubble Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DetoxifyingBubbleMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DetoxifyingBubbleMask",
+                "stock": 1
             }
         ]
     },
@@ -2033,7 +2140,8 @@
                 "variationId": "99-default",
                 "colorName": "Blackhead Removal Strips (10-pack)",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BlackheadRemovalStrips(10-pack)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BlackheadRemovalStrips(10-pack)",
+                "stock": 1
             }
         ]
     },
@@ -2053,7 +2161,8 @@
                 "variationId": "100-default",
                 "colorName": "Thermal Warming Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ThermalWarmingMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ThermalWarmingMask",
+                "stock": 1
             }
         ]
     },
@@ -2073,7 +2182,8 @@
                 "variationId": "101-default",
                 "colorName": "Soothing Aloe Vera Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SoothingAloeVeraMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SoothingAloeVeraMask",
+                "stock": 1
             }
         ]
     },
@@ -2093,7 +2203,8 @@
                 "variationId": "102-default",
                 "colorName": "Gold Anti-Wrinkle Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GoldAnti-WrinkleMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GoldAnti-WrinkleMask",
+                "stock": 1
             }
         ]
     },
@@ -2113,7 +2224,8 @@
                 "variationId": "103-default",
                 "colorName": "LED Light Therapy Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LEDLightTherapyMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LEDLightTherapyMask",
+                "stock": 1
             }
         ]
     },
@@ -2133,7 +2245,8 @@
                 "variationId": "104-default",
                 "colorName": "Charcoal Mud Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CharcoalMudMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CharcoalMudMask",
+                "stock": 1
             }
         ]
     },
@@ -2153,7 +2266,8 @@
                 "variationId": "105-default",
                 "colorName": "Rose Petal Gel Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=RosePetalGelMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=RosePetalGelMask",
+                "stock": 1
             }
         ]
     },
@@ -2173,7 +2287,8 @@
                 "variationId": "106-default",
                 "colorName": "Volcanic Ash Purifying Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=VolcanicAshPurifyingMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=VolcanicAshPurifyingMask",
+                "stock": 1
             }
         ]
     },
@@ -2193,7 +2308,8 @@
                 "variationId": "107-default",
                 "colorName": "Probiotic Repair Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ProbioticRepairMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ProbioticRepairMask",
+                "stock": 1
             }
         ]
     },
@@ -2213,7 +2329,8 @@
                 "variationId": "108-default",
                 "colorName": "Avocado Nourishing Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AvocadoNourishingMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AvocadoNourishingMask",
+                "stock": 0
             }
         ]
     },
@@ -2233,7 +2350,8 @@
                 "variationId": "109-default",
                 "colorName": "Tea Tree Oil Blemish Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TeaTreeOilBlemishMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TeaTreeOilBlemishMask",
+                "stock": 1
             }
         ]
     },
@@ -2253,7 +2371,8 @@
                 "variationId": "110-default",
                 "colorName": "Kombucha Detox Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=KombuchaDetoxMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=KombuchaDetoxMask",
+                "stock": 1
             }
         ]
     },
@@ -2273,7 +2392,8 @@
                 "variationId": "111-default",
                 "colorName": "Collagen Hydrolyzed Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CollagenHydrolyzedMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CollagenHydrolyzedMask",
+                "stock": 1
             }
         ]
     },
@@ -2293,7 +2413,8 @@
                 "variationId": "112-default",
                 "colorName": "Pore Minimizing Clay Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PoreMinimizingClayMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PoreMinimizingClayMask",
+                "stock": 1
             }
         ]
     },
@@ -2313,7 +2434,8 @@
                 "variationId": "113-default",
                 "colorName": "Glacier Water Hydration Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlacierWaterHydrationMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlacierWaterHydrationMask",
+                "stock": 1
             }
         ]
     },
@@ -2333,7 +2455,8 @@
                 "variationId": "114-default",
                 "colorName": "Fruit Enzyme Exfoliating Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FruitEnzymeExfoliatingMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FruitEnzymeExfoliatingMask",
+                "stock": 1
             }
         ]
     },
@@ -2353,7 +2476,8 @@
                 "variationId": "115-default",
                 "colorName": "Resveratrol Antioxidant Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ResveratrolAntioxidantMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ResveratrolAntioxidantMask",
+                "stock": 1
             }
         ]
     },
@@ -2373,7 +2497,8 @@
                 "variationId": "116-default",
                 "colorName": "Calming Centella Asiatica Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CalmingCentellaAsiaticaMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CalmingCentellaAsiaticaMask",
+                "stock": 1
             }
         ]
     },
@@ -2393,7 +2518,8 @@
                 "variationId": "117-default",
                 "colorName": "Pearl Brightening Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PearlBrighteningMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PearlBrighteningMask",
+                "stock": 1
             }
         ]
     },
@@ -2413,7 +2539,8 @@
                 "variationId": "118-default",
                 "colorName": "Magnetic Mud Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MagneticMudMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MagneticMudMask",
+                "stock": 1
             }
         ]
     },
@@ -2433,7 +2560,8 @@
                 "variationId": "119-default",
                 "colorName": "Spirulina Detox Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SpirulinaDetoxMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SpirulinaDetoxMask",
+                "stock": 1
             }
         ]
     },
@@ -2453,7 +2581,8 @@
                 "variationId": "120-default",
                 "colorName": "Watermelon Glow Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=WatermelonGlowMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=WatermelonGlowMask",
+                "stock": 1
             }
         ]
     },
@@ -2474,7 +2603,8 @@
                 "variationId": "121-white",
                 "colorName": "White",
                 "colorHex": "#FFFFFF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Sunscreen SPF 50 Broad Spectrum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Sunscreen SPF 50 Broad Spectrum",
+                "stock": 300
             }
         ]
     },
@@ -2494,7 +2624,8 @@
                 "variationId": "122-beige",
                 "colorName": "Light Beige",
                 "colorHex": "#F5F5DC",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/F5F5DC&text=Mineral Sunscreen SPF 30"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/F5F5DC&text=Mineral Sunscreen SPF 30",
+                "stock": 250
             }
         ]
     },
@@ -2514,7 +2645,8 @@
                 "variationId": "123-light",
                 "colorName": "Light Tint",
                 "colorHex": "#FDF5E6",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FDF5E6&text=Tinted Face Sunscreen SPF 40"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FDF5E6&text=Tinted Face Sunscreen SPF 40",
+                "stock": 200
             }
         ]
     },
@@ -2534,7 +2666,8 @@
                 "variationId": "124-blue",
                 "colorName": "Sky Blue",
                 "colorHex": "#87CEEB",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/87CEEB&text=Kids Sunscreen Lotion SPF 50+"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/87CEEB&text=Kids Sunscreen Lotion SPF 50+",
+                "stock": 280
             }
         ]
     },
@@ -2554,7 +2687,8 @@
                 "variationId": "125-clear",
                 "colorName": "Clear",
                 "colorHex": "#FFFFFF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Sport Sunscreen Spray SPF 70"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Sport Sunscreen Spray SPF 70",
+                "stock": 190
             }
         ]
     },
@@ -2574,7 +2708,8 @@
                 "variationId": "126-default",
                 "colorName": "Daily Face Fluid SPF 30",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DailyFaceFluidSPF30"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DailyFaceFluidSPF30",
+                "stock": 1
             }
         ]
     },
@@ -2594,7 +2729,8 @@
                 "variationId": "127-default",
                 "colorName": "After Sun Cooling Gel",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AfterSunCoolingGel"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AfterSunCoolingGel",
+                "stock": 1
             }
         ]
     },
@@ -2614,7 +2750,8 @@
                 "variationId": "128-default",
                 "colorName": "Anti-Aging Sunscreen SPF 50",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-AgingSunscreenSPF50"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-AgingSunscreenSPF50",
+                "stock": 1
             }
         ]
     },
@@ -2634,7 +2771,8 @@
                 "variationId": "129-default",
                 "colorName": "Organic Sunscreen Lotion SPF 30",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=OrganicSunscreenLotionSPF30"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=OrganicSunscreenLotionSPF30",
+                "stock": 1
             }
         ]
     },
@@ -2654,7 +2792,8 @@
                 "variationId": "130-default",
                 "colorName": "Invisible Daily SPF 40",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=InvisibleDailySPF40"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=InvisibleDailySPF40",
+                "stock": 1
             }
         ]
     },
@@ -2674,7 +2813,8 @@
                 "variationId": "131-default",
                 "colorName": "Lip Balm SPF 15",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LipBalmSPF15"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LipBalmSPF15",
+                "stock": 1
             }
         ]
     },
@@ -2694,7 +2834,8 @@
                 "variationId": "132-default",
                 "colorName": "Body Sunscreen Lotion SPF 50",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BodySunscreenLotionSPF50"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BodySunscreenLotionSPF50",
+                "stock": 1
             }
         ]
     },
@@ -2714,7 +2855,8 @@
                 "variationId": "133-default",
                 "colorName": "Sensitive Skin Sunscreen SPF 45",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SensitiveSkinSunscreenSPF45"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SensitiveSkinSunscreenSPF45",
+                "stock": 1
             }
         ]
     },
@@ -2734,7 +2876,8 @@
                 "variationId": "134-default",
                 "colorName": "Sunscreen Stick SPF 50",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SunscreenStickSPF50"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SunscreenStickSPF50",
+                "stock": 1
             }
         ]
     },
@@ -2754,7 +2897,8 @@
                 "variationId": "135-default",
                 "colorName": "Hair & Scalp Sunscreen SPF 30",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Hair&ScalpSunscreenSPF30"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Hair&ScalpSunscreenSPF30",
+                "stock": 1
             }
         ]
     },
@@ -2774,7 +2918,8 @@
                 "variationId": "136-default",
                 "colorName": "Water-Resistant Face SPF 50",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Water-ResistantFaceSPF50"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Water-ResistantFaceSPF50",
+                "stock": 1
             }
         ]
     },
@@ -2794,7 +2939,8 @@
                 "variationId": "137-default",
                 "colorName": "Anti-Pollution Sunscreen SPF 30",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-PollutionSunscreenSPF30"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-PollutionSunscreenSPF30",
+                "stock": 1
             }
         ]
     },
@@ -2814,7 +2960,8 @@
                 "variationId": "138-default",
                 "colorName": "Baby Sunscreen SPF 50+",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BabySunscreenSPF50+"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BabySunscreenSPF50+",
+                "stock": 1
             }
         ]
     },
@@ -2834,7 +2981,8 @@
                 "variationId": "139-default",
                 "colorName": "Primer with SPF 30",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PrimerwithSPF30"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PrimerwithSPF30",
+                "stock": 1
             }
         ]
     },
@@ -2854,7 +3002,8 @@
                 "variationId": "140-default",
                 "colorName": "Gel Sunscreen SPF 50",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GelSunscreenSPF50"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GelSunscreenSPF50",
+                "stock": 1
             }
         ]
     },
@@ -2874,7 +3023,8 @@
                 "variationId": "141-default",
                 "colorName": "Reef-Safe Sunscreen SPF 50",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Reef-SafeSunscreenSPF50"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Reef-SafeSunscreenSPF50",
+                "stock": 1
             }
         ]
     },
@@ -2894,7 +3044,8 @@
                 "variationId": "142-default",
                 "colorName": "Sunscreen for Oily Skin SPF 30",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SunscreenforOilySkinSPF30"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SunscreenforOilySkinSPF30",
+                "stock": 1
             }
         ]
     },
@@ -2914,7 +3065,8 @@
                 "variationId": "143-default",
                 "colorName": "Dry Touch Sunscreen SPF 45",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DryTouchSunscreenSPF45"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DryTouchSunscreenSPF45",
+                "stock": 1
             }
         ]
     },
@@ -2934,7 +3086,8 @@
                 "variationId": "144-default",
                 "colorName": "Body Mist Sunscreen SPF 30",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BodyMistSunscreenSPF30"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BodyMistSunscreenSPF30",
+                "stock": 1
             }
         ]
     },
@@ -2954,7 +3107,8 @@
                 "variationId": "145-default",
                 "colorName": "Acne-Prone Skin Sunscreen SPF 40",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Acne-ProneSkinSunscreenSPF40"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Acne-ProneSkinSunscreenSPF40",
+                "stock": 1
             }
         ]
     },
@@ -2974,7 +3128,8 @@
                 "variationId": "146-default",
                 "colorName": "High-Protection Kids Roll-On SPF 50+",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=High-ProtectionKidsRoll-OnSPF50+"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=High-ProtectionKidsRoll-OnSPF50+",
+                "stock": 1
             }
         ]
     },
@@ -2994,7 +3149,8 @@
                 "variationId": "147-default",
                 "colorName": "Invisible Body Spray SPF 30",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=InvisibleBodySpraySPF30"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=InvisibleBodySpraySPF30",
+                "stock": 1
             }
         ]
     },
@@ -3014,7 +3170,8 @@
                 "variationId": "148-default",
                 "colorName": "Post-Sun Hydrating Mist",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Post-SunHydratingMist"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Post-SunHydratingMist",
+                "stock": 1
             }
         ]
     },
@@ -3034,7 +3191,8 @@
                 "variationId": "149-default",
                 "colorName": "Blue Light Protection SPF 30",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BlueLightProtectionSPF30"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BlueLightProtectionSPF30",
+                "stock": 1
             }
         ]
     },
@@ -3054,7 +3212,8 @@
                 "variationId": "150-default",
                 "colorName": "Urban Shield Sunscreen SPF 40",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=UrbanShieldSunscreenSPF40"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=UrbanShieldSunscreenSPF40",
+                "stock": 1
             }
         ]
     },
@@ -3075,7 +3234,8 @@
                 "variationId": "151-white",
                 "colorName": "White",
                 "colorHex": "#FFFFFF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Deep Hydration Body Lotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Deep Hydration Body Lotion",
+                "stock": 200
             }
         ]
     },
@@ -3095,7 +3255,8 @@
                 "variationId": "152-pink",
                 "colorName": "Light Peach",
                 "colorHex": "#FFDAB9",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFDAB9&text=Firming Body Cream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFDAB9&text=Firming Body Cream",
+                "stock": 150
             }
         ]
     },
@@ -3115,7 +3276,8 @@
                 "variationId": "153-brown",
                 "colorName": "Brown",
                 "colorHex": "#A52A2A",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/A52A2A&text=Nourishing Body Butter"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/A52A2A&text=Nourishing Body Butter",
+                "stock": 180
             }
         ]
     },
@@ -3135,7 +3297,8 @@
                 "variationId": "154-default",
                 "colorName": "Soothing Oatmeal Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SoothingOatmealLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SoothingOatmealLotion",
+                "stock": 1
             }
         ]
     },
@@ -3155,7 +3318,8 @@
                 "variationId": "155-default",
                 "colorName": "Cocoa Butter Hand & Body Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CocoaButterHand&BodyLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CocoaButterHand&BodyLotion",
+                "stock": 1
             }
         ]
     },
@@ -3175,7 +3339,8 @@
                 "variationId": "156-default",
                 "colorName": "Anti-Cellulite Body Gel",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-CelluliteBodyGel"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-CelluliteBodyGel",
+                "stock": 1
             }
         ]
     },
@@ -3195,7 +3360,8 @@
                 "variationId": "157-default",
                 "colorName": "Body Oil with Jojoba",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BodyOilwithJojoba"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BodyOilwithJojoba",
+                "stock": 1
             }
         ]
     },
@@ -3215,7 +3381,8 @@
                 "variationId": "158-default",
                 "colorName": "Shea Butter Healing Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SheaButterHealingLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SheaButterHealingLotion",
+                "stock": 1
             }
         ]
     },
@@ -3235,7 +3402,8 @@
                 "variationId": "159-default",
                 "colorName": "Vitamin E Skin Revitalizer",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=VitaminESkinRevitalizer"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=VitaminESkinRevitalizer",
+                "stock": 1
             }
         ]
     },
@@ -3255,7 +3423,8 @@
                 "variationId": "160-default",
                 "colorName": "Fragrance-Free Daily Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Fragrance-FreeDailyLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Fragrance-FreeDailyLotion",
+                "stock": 1
             }
         ]
     },
@@ -3275,7 +3444,8 @@
                 "variationId": "161-default",
                 "colorName": "Cooling Menthol Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CoolingMentholLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CoolingMentholLotion",
+                "stock": 1
             }
         ]
     },
@@ -3295,7 +3465,8 @@
                 "variationId": "162-default",
                 "colorName": "Glow Enhancing Body Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlowEnhancingBodyLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlowEnhancingBodyLotion",
+                "stock": 1
             }
         ]
     },
@@ -3315,7 +3486,8 @@
                 "variationId": "163-default",
                 "colorName": "Prebiotic Body Milk",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PrebioticBodyMilk"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PrebioticBodyMilk",
+                "stock": 1
             }
         ]
     },
@@ -3335,7 +3507,8 @@
                 "variationId": "164-default",
                 "colorName": "Retinol Body Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=RetinolBodyLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=RetinolBodyLotion",
+                "stock": 1
             }
         ]
     },
@@ -3355,7 +3528,8 @@
                 "variationId": "165-default",
                 "colorName": "Vegan Body Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=VeganBodyCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=VeganBodyCream",
+                "stock": 1
             }
         ]
     },
@@ -3375,7 +3549,8 @@
                 "variationId": "166-default",
                 "colorName": "Exfoliating Body Lotion with AHA",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ExfoliatingBodyLotionwithAHA"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ExfoliatingBodyLotionwithAHA",
+                "stock": 1
             }
         ]
     },
@@ -3395,7 +3570,8 @@
                 "variationId": "167-default",
                 "colorName": "Hand & Nail Repair Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Hand&NailRepairCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Hand&NailRepairCream",
+                "stock": 1
             }
         ]
     },
@@ -3415,7 +3591,8 @@
                 "variationId": "168-default",
                 "colorName": "CBD Infused Body Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CBDInfusedBodyLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CBDInfusedBodyLotion",
+                "stock": 1
             }
         ]
     },
@@ -3435,7 +3612,8 @@
                 "variationId": "169-default",
                 "colorName": "Stretch Mark Defense Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=StretchMarkDefenseCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=StretchMarkDefenseCream",
+                "stock": 1
             }
         ]
     },
@@ -3455,7 +3633,8 @@
                 "variationId": "170-default",
                 "colorName": "Self-Tanning Body Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Self-TanningBodyLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Self-TanningBodyLotion",
+                "stock": 1
             }
         ]
     },
@@ -3475,7 +3654,8 @@
                 "variationId": "171-default",
                 "colorName": "Dry Skin Therapy Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DrySkinTherapyLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DrySkinTherapyLotion",
+                "stock": 1
             }
         ]
     },
@@ -3495,7 +3675,8 @@
                 "variationId": "172-default",
                 "colorName": "Age Defying Body Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AgeDefyingBodySerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AgeDefyingBodySerum",
+                "stock": 1
             }
         ]
     },
@@ -3515,7 +3696,8 @@
                 "variationId": "173-default",
                 "colorName": "Coffee Scrub Body Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CoffeeScrubBodyLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CoffeeScrubBodyLotion",
+                "stock": 1
             }
         ]
     },
@@ -3535,7 +3717,8 @@
                 "variationId": "174-default",
                 "colorName": "Post-Workout Recovery Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Post-WorkoutRecoveryLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Post-WorkoutRecoveryLotion",
+                "stock": 1
             }
         ]
     },
@@ -3555,7 +3738,8 @@
                 "variationId": "175-default",
                 "colorName": "Magnesium Sleep Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MagnesiumSleepLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MagnesiumSleepLotion",
+                "stock": 1
             }
         ]
     },
@@ -3575,7 +3759,8 @@
                 "variationId": "176-default",
                 "colorName": "Body Contour Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BodyContourCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BodyContourCream",
+                "stock": 1
             }
         ]
     },
@@ -3595,7 +3780,8 @@
                 "variationId": "177-default",
                 "colorName": "Fragrance Layering Body Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FragranceLayeringBodyLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FragranceLayeringBodyLotion",
+                "stock": 1
             }
         ]
     },
@@ -3615,7 +3801,8 @@
                 "variationId": "178-default",
                 "colorName": "Healing Balm for Dry Patches",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HealingBalmforDryPatches"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HealingBalmforDryPatches",
+                "stock": 1
             }
         ]
     },
@@ -3635,7 +3822,8 @@
                 "variationId": "179-default",
                 "colorName": "Collagen & Elastin Body Lotion",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Collagen&ElastinBodyLotion"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Collagen&ElastinBodyLotion",
+                "stock": 1
             }
         ]
     },
@@ -3655,7 +3843,8 @@
                 "variationId": "180-default",
                 "colorName": "Body Gloss Hydrating Mist",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BodyGlossHydratingMist"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BodyGlossHydratingMist",
+                "stock": 1
             }
         ]
     },
@@ -3675,7 +3864,8 @@
                 "variationId": "181-brown",
                 "colorName": "Brown",
                 "colorHex": "#A52A2A",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/A52A2A&text=Argan Oil Shampoo"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/A52A2A&text=Argan Oil Shampoo",
+                "stock": 250
             }
         ]
     },
@@ -3695,7 +3885,8 @@
                 "variationId": "182-blue",
                 "colorName": "Aqua",
                 "colorHex": "#00FFFF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/00FFFF&text=Volumizing Conditioner"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/00FFFF&text=Volumizing Conditioner",
+                "stock": 200
             }
         ]
     },
@@ -3715,7 +3906,8 @@
                 "variationId": "183-green",
                 "colorName": "Dark Green",
                 "colorHex": "#006400",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/6400&text=Sulfate-Free Hair Mask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/6400&text=Sulfate-Free Hair Mask",
+                "stock": 180
             }
         ]
     },
@@ -3736,7 +3928,8 @@
                 "variationId": "184-default",
                 "colorName": "Light",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Light"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Light",
+                "stock": 1
             }
         ]
     },
@@ -3756,7 +3949,8 @@
                 "variationId": "185-default",
                 "colorName": "Leave-In Conditioner",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Leave-InConditioner"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Leave-InConditioner",
+                "stock": 1
             }
         ]
     },
@@ -3776,7 +3970,8 @@
                 "variationId": "186-default",
                 "colorName": "Heat Protectant Spray",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HeatProtectantSpray"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HeatProtectantSpray",
+                "stock": 1
             }
         ]
     },
@@ -3796,7 +3991,8 @@
                 "variationId": "187-default",
                 "colorName": "Scalp Scrub",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ScalpScrub"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ScalpScrub",
+                "stock": 1
             }
         ]
     },
@@ -3816,7 +4012,8 @@
                 "variationId": "188-default",
                 "colorName": "Anti-Frizz Serum",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-FrizzSerum"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-FrizzSerum",
+                "stock": 0
             }
         ]
     },
@@ -3836,7 +4033,8 @@
                 "variationId": "189-default",
                 "colorName": "Hair Growth Oil",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairGrowthOil"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairGrowthOil",
+                "stock": 1
             }
         ]
     },
@@ -3856,7 +4054,8 @@
                 "variationId": "190-default",
                 "colorName": "Color Safe Shampoo & Conditioner Set",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ColorSafeShampoo&ConditionerSet"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ColorSafeShampoo&ConditionerSet",
+                "stock": 1
             }
         ]
     },
@@ -3876,7 +4075,8 @@
                 "variationId": "191-default",
                 "colorName": "Curl Defining Cream",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CurlDefiningCream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CurlDefiningCream",
+                "stock": 1
             }
         ]
     },
@@ -3896,7 +4096,8 @@
                 "variationId": "192-default",
                 "colorName": "Texturizing Sea Salt Spray",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TexturizingSeaSaltSpray"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TexturizingSeaSaltSpray",
+                "stock": 1
             }
         ]
     },
@@ -3916,7 +4117,8 @@
                 "variationId": "193-default",
                 "colorName": "Keratin Repair Treatment",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=KeratinRepairTreatment"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=KeratinRepairTreatment",
+                "stock": 1
             }
         ]
     },
@@ -3936,7 +4138,8 @@
                 "variationId": "194-default",
                 "colorName": "Dandruff Control Shampoo",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DandruffControlShampoo"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DandruffControlShampoo",
+                "stock": 1
             }
         ]
     },
@@ -3956,7 +4159,8 @@
                 "variationId": "195-default",
                 "colorName": "Hair Thickening Fibers",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairThickeningFibers"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairThickeningFibers",
+                "stock": 1
             }
         ]
     },
@@ -3976,7 +4180,8 @@
                 "variationId": "196-default",
                 "colorName": "Glossing Spray",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlossingSpray"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlossingSpray",
+                "stock": 1
             }
         ]
     },
@@ -3996,7 +4201,8 @@
                 "variationId": "197-default",
                 "colorName": "Bond Repair Treatment",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BondRepairTreatment"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BondRepairTreatment",
+                "stock": 1
             }
         ]
     },
@@ -4016,7 +4222,8 @@
                 "variationId": "198-default",
                 "colorName": "Pre-Shampoo Scalp Treatment",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Pre-ShampooScalpTreatment"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Pre-ShampooScalpTreatment",
+                "stock": 1
             }
         ]
     },
@@ -4036,7 +4243,8 @@
                 "variationId": "199-default",
                 "colorName": "Protein Hair Mask",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ProteinHairMask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ProteinHairMask",
+                "stock": 1
             }
         ]
     },
@@ -4056,7 +4264,8 @@
                 "variationId": "200-default",
                 "colorName": "Tea Tree Clarifying Shampoo",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TeaTreeClarifyingShampoo"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TeaTreeClarifyingShampoo",
+                "stock": 1
             }
         ]
     },
@@ -4076,7 +4285,8 @@
                 "variationId": "201-default",
                 "colorName": "Silk Hair Turban",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SilkHairTurban"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SilkHairTurban",
+                "stock": 1
             }
         ]
     },
@@ -4096,7 +4306,8 @@
                 "variationId": "202-default",
                 "colorName": "Bi-Phase Detangling Spray",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Bi-PhaseDetanglingSpray"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Bi-PhaseDetanglingSpray",
+                "stock": 1
             }
         ]
     },
@@ -4116,7 +4327,8 @@
                 "variationId": "203-default",
                 "colorName": "Amplify Root Lift Spray",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AmplifyRootLiftSpray"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AmplifyRootLiftSpray",
+                "stock": 1
             }
         ]
     },
@@ -4136,7 +4348,8 @@
                 "variationId": "204-default",
                 "colorName": "Anti-Pollution Hair Mist",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-PollutionHairMist"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-PollutionHairMist",
+                "stock": 1
             }
         ]
     },
@@ -4156,7 +4369,8 @@
                 "variationId": "205-default",
                 "colorName": "UV Protection Hair Spray",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=UVProtectionHairSpray"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=UVProtectionHairSpray",
+                "stock": 1
             }
         ]
     },
@@ -4176,7 +4390,8 @@
                 "variationId": "206-default",
                 "colorName": "Hair Elixir with Biotin",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairElixirwithBiotin"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairElixirwithBiotin",
+                "stock": 1
             }
         ]
     },
@@ -4196,7 +4411,8 @@
                 "variationId": "207-default",
                 "colorName": "Hair Growth Vitamins (30 count)",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairGrowthVitamins(30count)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairGrowthVitamins(30count)",
+                "stock": 1
             }
         ]
     },
@@ -4216,7 +4432,8 @@
                 "variationId": "208-default",
                 "colorName": "Bamboo Hair Brush",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BambooHairBrush"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BambooHairBrush",
+                "stock": 1
             }
         ]
     },
@@ -4236,7 +4453,8 @@
                 "variationId": "209-default",
                 "colorName": "Flexi Rod Set (10-pack)",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FlexiRodSet(10-pack)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FlexiRodSet(10-pack)",
+                "stock": 1
             }
         ]
     },
@@ -4256,7 +4474,8 @@
                 "variationId": "210-default",
                 "colorName": "Travel Size Haircare Kit",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TravelSizeHaircareKit"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TravelSizeHaircareKit",
+                "stock": 1
             }
         ]
     },
@@ -4276,13 +4495,15 @@
                 "variationId": "211-light",
                 "colorName": "Light",
                 "colorHex": "#FCE2C0",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FCE2C0&text=Natural Finish Liquid Foundation"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FCE2C0&text=Natural Finish Liquid Foundation",
+                "stock": 180
             },
             {
                 "variationId": "211-medium",
                 "colorName": "Medium",
                 "colorHex": "#D2B48C",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/D2B48C&text=Natural Finish Liquid Foundation"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/D2B48C&text=Natural Finish Liquid Foundation",
+                "stock": 150
             }
         ]
     },
@@ -4302,7 +4523,8 @@
                 "variationId": "212-black",
                 "colorName": "Black",
                 "colorHex": "#000000",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/0&text=Volumizing Mascara - Black"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/0&text=Volumizing Mascara - Black",
+                "stock": 250
             }
         ]
     },
@@ -4322,7 +4544,8 @@
                 "variationId": "213-fair",
                 "colorName": "Fair",
                 "colorHex": "#FAEBD7",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FAEBD7&text=Hydrating Concealer"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FAEBD7&text=Hydrating Concealer",
+                "stock": 160
             }
         ]
     },
@@ -4342,7 +4565,8 @@
                 "variationId": "214-nude",
                 "colorName": "Nude",
                 "colorHex": "#E0B0FF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/E0B0FF&text=Eyeshadow Palette - Nude Tones"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/E0B0FF&text=Eyeshadow Palette - Nude Tones",
+                "stock": 140
             }
         ]
     },
@@ -4362,7 +4586,8 @@
                 "variationId": "215-red",
                 "colorName": "Red",
                 "colorHex": "#FF0000",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FF0000&text=Long-Lasting Liquid Lipstick"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FF0000&text=Long-Lasting Liquid Lipstick",
+                "stock": 190
             }
         ]
     },
@@ -4382,7 +4607,8 @@
                 "variationId": "216-default",
                 "colorName": "Brow Pencil with Spoolie",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BrowPencilwithSpoolie"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BrowPencilwithSpoolie",
+                "stock": 1
             }
         ]
     },
@@ -4402,7 +4628,8 @@
                 "variationId": "217-default",
                 "colorName": "Setting Spray - Matte Finish",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SettingSpray-MatteFinish"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SettingSpray-MatteFinish",
+                "stock": 1
             }
         ]
     },
@@ -4422,7 +4649,8 @@
                 "variationId": "218-default",
                 "colorName": "Cream Blush Stick",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CreamBlushStick"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CreamBlushStick",
+                "stock": 1
             }
         ]
     },
@@ -4442,7 +4670,8 @@
                 "variationId": "219-default",
                 "colorName": "Highlighter Palette",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HighlighterPalette"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HighlighterPalette",
+                "stock": 1
             }
         ]
     },
@@ -4462,7 +4691,8 @@
                 "variationId": "220-default",
                 "colorName": "Eyeliner Pen - Waterproof",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EyelinerPen-Waterproof"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EyelinerPen-Waterproof",
+                "stock": 1
             }
         ]
     },
@@ -4482,7 +4712,8 @@
                 "variationId": "221-default",
                 "colorName": "Powder Bronzer",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PowderBronzer"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PowderBronzer",
+                "stock": 1
             }
         ]
     },
@@ -4502,7 +4733,8 @@
                 "variationId": "222-default",
                 "colorName": "Lip Gloss - Clear Shine",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LipGloss-ClearShine"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LipGloss-ClearShine",
+                "stock": 1
             }
         ]
     },
@@ -4522,7 +4754,8 @@
                 "variationId": "223-default",
                 "colorName": "Contour Kit",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ContourKit"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ContourKit",
+                "stock": 1
             }
         ]
     },
@@ -4542,7 +4775,8 @@
                 "variationId": "224-default",
                 "colorName": "Blush & Highlight Duo",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Blush&HighlightDuo"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Blush&HighlightDuo",
+                "stock": 1
             }
         ]
     },
@@ -4562,7 +4796,8 @@
                 "variationId": "225-default",
                 "colorName": "Glitter Eyeshadow Palette",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlitterEyeshadowPalette"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlitterEyeshadowPalette",
+                "stock": 1
             }
         ]
     },
@@ -4582,7 +4817,8 @@
                 "variationId": "226-default",
                 "colorName": "Primer - Blurring Effect",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Primer-BlurringEffect"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Primer-BlurringEffect",
+                "stock": 1
             }
         ]
     },
@@ -4602,7 +4838,8 @@
                 "variationId": "227-default",
                 "colorName": "Lash Primer",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LashPrimer"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LashPrimer",
+                "stock": 1
             }
         ]
     },
@@ -4622,7 +4859,8 @@
                 "variationId": "228-default",
                 "colorName": "Tinted Lip Balm",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TintedLipBalm"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TintedLipBalm",
+                "stock": 1
             }
         ]
     },
@@ -4643,7 +4881,8 @@
                 "variationId": "229-default",
                 "colorName": "Powder",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FF0000&text=Powder"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FF0000&text=Powder",
+                "stock": 1
             }
         ]
     },
@@ -4663,7 +4902,8 @@
                 "variationId": "230-default",
                 "colorName": "Color Correcting Concealer Palette",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ColorCorrectingConcealerPalette"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ColorCorrectingConcealerPalette",
+                "stock": 1
             }
         ]
     },
@@ -4683,7 +4923,8 @@
                 "variationId": "231-default",
                 "colorName": "Gel Eyeliner Pot",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GelEyelinerPot"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GelEyelinerPot",
+                "stock": 1
             }
         ]
     },
@@ -4703,7 +4944,8 @@
                 "variationId": "232-default",
                 "colorName": "Lip Liner Pencil",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LipLinerPencil"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LipLinerPencil",
+                "stock": 1
             }
         ]
     },
@@ -4723,7 +4965,8 @@
                 "variationId": "233-default",
                 "colorName": "Cream Eyeshadow Stick",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CreamEyeshadowStick"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CreamEyeshadowStick",
+                "stock": 1
             }
         ]
     },
@@ -4743,7 +4986,8 @@
                 "variationId": "234-default",
                 "colorName": "Full Coverage Foundation",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FullCoverageFoundation"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FullCoverageFoundation",
+                "stock": 1
             }
         ]
     },
@@ -4763,7 +5007,8 @@
                 "variationId": "235-default",
                 "colorName": "Waterproof Mascara - Brown",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=WaterproofMascara-Brown"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=WaterproofMascara-Brown",
+                "stock": 1
             }
         ]
     },
@@ -4783,7 +5028,8 @@
                 "variationId": "236-default",
                 "colorName": "Liquid Blush",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LiquidBlush"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LiquidBlush",
+                "stock": 1
             }
         ]
     },
@@ -4803,7 +5049,8 @@
                 "variationId": "237-default",
                 "colorName": "Pressed Powder Foundation",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PressedPowderFoundation"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PressedPowderFoundation",
+                "stock": 1
             }
         ]
     },
@@ -4823,7 +5070,8 @@
                 "variationId": "238-default",
                 "colorName": "Face & Body Glow Liquid",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Face&BodyGlowLiquid"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Face&BodyGlowLiquid",
+                "stock": 1
             }
         ]
     },
@@ -4843,7 +5091,8 @@
                 "variationId": "239-default",
                 "colorName": "Eyebrow Gel - Clear",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EyebrowGel-Clear"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EyebrowGel-Clear",
+                "stock": 1
             }
         ]
     },
@@ -4863,7 +5112,8 @@
                 "variationId": "240-default",
                 "colorName": "Makeup Remover Balm",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MakeupRemoverBalm"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MakeupRemoverBalm",
+                "stock": 1
             }
         ]
     },
@@ -4883,7 +5133,8 @@
                 "variationId": "241-gold",
                 "colorName": "Gold",
                 "colorHex": "#FFD700",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFD700&text=Eau de Parfum - Floral Breeze"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFD700&text=Eau de Parfum - Floral Breeze",
+                "stock": 150
             }
         ]
     },
@@ -4903,7 +5154,8 @@
                 "variationId": "242-blue",
                 "colorName": "Navy Blue",
                 "colorHex": "#000080",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/80&text=Eau de Toilette - Ocean Mist"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/80&text=Eau de Toilette - Ocean Mist",
+                "stock": 120
             }
         ]
     },
@@ -4923,7 +5175,8 @@
                 "variationId": "243-pink",
                 "colorName": "Hot Pink",
                 "colorHex": "#FF69B4",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FF69B4&text=Body Mist - Vanilla Dream"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FF69B4&text=Body Mist - Vanilla Dream",
+                "stock": 200
             }
         ]
     },
@@ -4943,7 +5196,8 @@
                 "variationId": "244-default",
                 "colorName": "Unisex Eau de Cologne - Citrus Burst",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=UnisexEaudeCologne-CitrusBurst"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=UnisexEaudeCologne-CitrusBurst",
+                "stock": 1
             }
         ]
     },
@@ -4963,7 +5217,8 @@
                 "variationId": "245-default",
                 "colorName": "Solid Perfume Balm - Rose Garden",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SolidPerfumeBalm-RoseGarden"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SolidPerfumeBalm-RoseGarden",
+                "stock": 1
             }
         ]
     },
@@ -4983,7 +5238,8 @@
                 "variationId": "246-default",
                 "colorName": "Home Fragrance Diffuser - Lavender",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HomeFragranceDiffuser-Lavender"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HomeFragranceDiffuser-Lavender",
+                "stock": 1
             }
         ]
     },
@@ -5003,7 +5259,8 @@
                 "variationId": "247-default",
                 "colorName": "Room Spray - Fresh Linen",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=RoomSpray-FreshLinen"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=RoomSpray-FreshLinen",
+                "stock": 1
             }
         ]
     },
@@ -5023,7 +5280,8 @@
                 "variationId": "248-default",
                 "colorName": "Scented Candle - Sandalwood Spice",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ScentedCandle-SandalwoodSpice"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ScentedCandle-SandalwoodSpice",
+                "stock": 1
             }
         ]
     },
@@ -5043,7 +5301,8 @@
                 "variationId": "249-default",
                 "colorName": "Travel Size Perfume Set",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TravelSizePerfumeSet"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TravelSizePerfumeSet",
+                "stock": 1
             }
         ]
     },
@@ -5063,7 +5322,8 @@
                 "variationId": "250-default",
                 "colorName": "Hair Perfume - White Musk",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairPerfume-WhiteMusk"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairPerfume-WhiteMusk",
+                "stock": 1
             }
         ]
     },
@@ -5083,7 +5343,8 @@
                 "variationId": "251-default",
                 "colorName": "Pillow Mist - Chamomile Sleep",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PillowMist-ChamomileSleep"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PillowMist-ChamomileSleep",
+                "stock": 1
             }
         ]
     },
@@ -5103,7 +5364,8 @@
                 "variationId": "252-default",
                 "colorName": "Car Air Freshener - New Car Scent",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CarAirFreshener-NewCarScent"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CarAirFreshener-NewCarScent",
+                "stock": 1
             }
         ]
     },
@@ -5123,7 +5385,8 @@
                 "variationId": "253-default",
                 "colorName": "Perfume Oil Roll-On - Amber Wood",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PerfumeOilRoll-On-AmberWood"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PerfumeOilRoll-On-AmberWood",
+                "stock": 1
             }
         ]
     },
@@ -5143,7 +5406,8 @@
                 "variationId": "254-default",
                 "colorName": "Aftershave Balm - Classic Barber",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AftershaveBalm-ClassicBarber"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AftershaveBalm-ClassicBarber",
+                "stock": 1
             }
         ]
     },
@@ -5163,7 +5427,8 @@
                 "variationId": "255-default",
                 "colorName": "Hand Cream - Lemon Verbena Scent",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HandCream-LemonVerbenaScent"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HandCream-LemonVerbenaScent",
+                "stock": 1
             }
         ]
     },
@@ -5183,7 +5448,8 @@
                 "variationId": "256-default",
                 "colorName": "Fragrance Refill for Diffuser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FragranceRefillforDiffuser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FragranceRefillforDiffuser",
+                "stock": 1
             }
         ]
     },
@@ -5203,7 +5469,8 @@
                 "variationId": "257-default",
                 "colorName": "Aromatherapy Essential Oil Blend",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AromatherapyEssentialOilBlend"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AromatherapyEssentialOilBlend",
+                "stock": 1
             }
         ]
     },
@@ -5223,7 +5490,8 @@
                 "variationId": "258-default",
                 "colorName": "Linen Spray - Ocean Breeze",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LinenSpray-OceanBreeze"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LinenSpray-OceanBreeze",
+                "stock": 1
             }
         ]
     },
@@ -5243,7 +5511,8 @@
                 "variationId": "259-default",
                 "colorName": "Solid Air Freshener - Peach Blossom",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SolidAirFreshener-PeachBlossom"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SolidAirFreshener-PeachBlossom",
+                "stock": 1
             }
         ]
     },
@@ -5263,7 +5532,8 @@
                 "variationId": "260-default",
                 "colorName": "Kids Perfume - Berry Fun",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=KidsPerfume-BerryFun"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=KidsPerfume-BerryFun",
+                "stock": 1
             }
         ]
     },
@@ -5284,7 +5554,8 @@
                 "variationId": "261-default",
                 "colorName": "Pet Odor Eliminator Spray",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PetOdorEliminatorSpray"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PetOdorEliminatorSpray",
+                "stock": 1
             }
         ]
     },
@@ -5304,7 +5575,8 @@
                 "variationId": "262-default",
                 "colorName": "Yoga Mat Freshener - Eucalyptus",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=YogaMatFreshener-Eucalyptus"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=YogaMatFreshener-Eucalyptus",
+                "stock": 1
             }
         ]
     },
@@ -5324,7 +5596,8 @@
                 "variationId": "263-default",
                 "colorName": "Bath Bomb Set - Assorted Scents",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BathBombSet-AssortedScents"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BathBombSet-AssortedScents",
+                "stock": 1
             }
         ]
     },
@@ -5344,7 +5617,8 @@
                 "variationId": "264-default",
                 "colorName": "Drawer Sachets - Cedar Wood",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DrawerSachets-CedarWood"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DrawerSachets-CedarWood",
+                "stock": 1
             }
         ]
     },
@@ -5364,7 +5638,8 @@
                 "variationId": "265-default",
                 "colorName": "Travel Sized Body Spray Set",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TravelSizedBodySpraySet"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TravelSizedBodySpraySet",
+                "stock": 1
             }
         ]
     },
@@ -5384,7 +5659,8 @@
                 "variationId": "266-default",
                 "colorName": "Kitchen Odor Eliminator Spray",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=KitchenOdorEliminatorSpray"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=KitchenOdorEliminatorSpray",
+                "stock": 1
             }
         ]
     },
@@ -5404,7 +5680,8 @@
                 "variationId": "267-default",
                 "colorName": "Luxury Perfume Atomizer",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LuxuryPerfumeAtomizer"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LuxuryPerfumeAtomizer",
+                "stock": 1
             }
         ]
     },
@@ -5424,7 +5701,8 @@
                 "variationId": "268-default",
                 "colorName": "Wardrobe Scented Hangers (3-pack)",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=WardrobeScentedHangers(3-pack)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=WardrobeScentedHangers(3-pack)",
+                "stock": 1
             }
         ]
     },
@@ -5444,7 +5722,8 @@
                 "variationId": "269-default",
                 "colorName": "Electric Diffuser - White",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ElectricDiffuser-White"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ElectricDiffuser-White",
+                "stock": 1
             }
         ]
     },
@@ -5464,7 +5743,8 @@
                 "variationId": "270-default",
                 "colorName": "Signature Scent Discovery Kit",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SignatureScentDiscoveryKit"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SignatureScentDiscoveryKit",
+                "stock": 1
             }
         ]
     },
@@ -5484,7 +5764,8 @@
                 "variationId": "271-green",
                 "colorName": "Jade Green",
                 "colorHex": "#00A86B",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/00A86B&text=Jade Roller & Gua Sha Set"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/00A86B&text=Jade Roller & Gua Sha Set",
+                "stock": 180
             }
         ]
     },
@@ -5504,7 +5785,8 @@
                 "variationId": "272-white",
                 "colorName": "White",
                 "colorHex": "#FFFFFF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Electric Facial Cleansing Brush"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Electric Facial Cleansing Brush",
+                "stock": 150
             }
         ]
     },
@@ -5524,7 +5806,8 @@
                 "variationId": "273-red",
                 "colorName": "Red",
                 "colorHex": "#FF0000",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FF0000&text=LED Skincare Mask"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FF0000&text=LED Skincare Mask",
+                "stock": 100
             }
         ]
     },
@@ -5544,7 +5827,8 @@
                 "variationId": "274-default",
                 "colorName": "Microcurrent Facial Device",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MicrocurrentFacialDevice"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MicrocurrentFacialDevice",
+                "stock": 1
             }
         ]
     },
@@ -5564,7 +5848,8 @@
                 "variationId": "275-default",
                 "colorName": "Blackhead Remover Kit (5-piece)",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BlackheadRemoverKit(5-piece)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BlackheadRemoverKit(5-piece)",
+                "stock": 1
             }
         ]
     },
@@ -5584,7 +5869,8 @@
                 "variationId": "276-default",
                 "colorName": "Silicone Face Scrubber",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SiliconeFaceScrubber"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SiliconeFaceScrubber",
+                "stock": 1
             }
         ]
     },
@@ -5604,7 +5890,8 @@
                 "variationId": "277-default",
                 "colorName": "Dermaroller (0.25mm)",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Dermaroller(0.25mm)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Dermaroller(0.25mm)",
+                "stock": 1
             }
         ]
     },
@@ -5624,7 +5911,8 @@
                 "variationId": "278-default",
                 "colorName": "Professional Makeup Brush Set (12-piece)",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ProfessionalMakeupBrushSet(12-piece)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ProfessionalMakeupBrushSet(12-piece)",
+                "stock": 1
             }
         ]
     },
@@ -5644,7 +5932,8 @@
                 "variationId": "279-default",
                 "colorName": "Beauty Blender Sponge (2-pack)",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BeautyBlenderSponge(2-pack)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BeautyBlenderSponge(2-pack)",
+                "stock": 1
             }
         ]
     },
@@ -5664,7 +5953,8 @@
                 "variationId": "280-default",
                 "colorName": "Heated Eyelash Curler",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HeatedEyelashCurler"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HeatedEyelashCurler",
+                "stock": 1
             }
         ]
     },
@@ -5684,7 +5974,8 @@
                 "variationId": "281-default",
                 "colorName": "Pore Vacuum Cleaner",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PoreVacuumCleaner"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=PoreVacuumCleaner",
+                "stock": 1
             }
         ]
     },
@@ -5704,7 +5995,8 @@
                 "variationId": "282-default",
                 "colorName": "Hair Drying Towel Wrap",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairDryingTowelWrap"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairDryingTowelWrap",
+                "stock": 1
             }
         ]
     },
@@ -5724,7 +6016,8 @@
                 "variationId": "283-default",
                 "colorName": "Acrylic Makeup Organizer",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AcrylicMakeupOrganizer"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AcrylicMakeupOrganizer",
+                "stock": 1
             }
         ]
     },
@@ -5744,7 +6037,8 @@
                 "variationId": "284-default",
                 "colorName": "Shaving Brush & Bowl Set",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ShavingBrush&BowlSet"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ShavingBrush&BowlSet",
+                "stock": 1
             }
         ]
     },
@@ -5764,7 +6058,8 @@
                 "variationId": "285-default",
                 "colorName": "Facial Steamer",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FacialSteamer"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FacialSteamer",
+                "stock": 1
             }
         ]
     },
@@ -5784,7 +6079,8 @@
                 "variationId": "286-default",
                 "colorName": "Exfoliating Body Brush",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ExfoliatingBodyBrush"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ExfoliatingBodyBrush",
+                "stock": 1
             }
         ]
     },
@@ -5804,7 +6100,8 @@
                 "variationId": "287-default",
                 "colorName": "Reusable Cotton Pads (10-pack)",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ReusableCottonPads(10-pack)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ReusableCottonPads(10-pack)",
+                "stock": 1
             }
         ]
     },
@@ -5825,7 +6122,8 @@
                 "variationId": "288-default",
                 "colorName": "Electric Callus Remover",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ElectricCallusRemover"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ElectricCallusRemover",
+                "stock": 1
             }
         ]
     },
@@ -5845,7 +6143,8 @@
                 "variationId": "289-default",
                 "colorName": "Sunscreen Application Brush",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SunscreenApplicationBrush"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SunscreenApplicationBrush",
+                "stock": 1
             }
         ]
     },
@@ -5865,7 +6164,8 @@
                 "variationId": "290-default",
                 "colorName": "Eyebrow Razor (3-pack)",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EyebrowRazor(3-pack)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EyebrowRazor(3-pack)",
+                "stock": 1
             }
         ]
     },
@@ -5885,7 +6185,8 @@
                 "variationId": "291-default",
                 "colorName": "Collagen Infusion Device",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CollagenInfusionDevice"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CollagenInfusionDevice",
+                "stock": 1
             }
         ]
     },
@@ -5905,7 +6206,8 @@
                 "variationId": "292-default",
                 "colorName": "Travel Toiletry Bag",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TravelToiletryBag"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TravelToiletryBag",
+                "stock": 1
             }
         ]
     },
@@ -5925,7 +6227,8 @@
                 "variationId": "293-default",
                 "colorName": "Body Scrubber Mitt (2-pack)",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BodyScrubberMitt(2-pack)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BodyScrubberMitt(2-pack)",
+                "stock": 1
             }
         ]
     },
@@ -5945,7 +6248,8 @@
                 "variationId": "294-default",
                 "colorName": "Face Ice Roller",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FaceIceRoller"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FaceIceRoller",
+                "stock": 1
             }
         ]
     },
@@ -5965,7 +6269,8 @@
                 "variationId": "295-default",
                 "colorName": "Hair Detangling Brush",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairDetanglingBrush"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HairDetanglingBrush",
+                "stock": 1
             }
         ]
     },
@@ -5985,7 +6290,8 @@
                 "variationId": "296-default",
                 "colorName": "Silicone Lip Scrubber",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SiliconeLipScrubber"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=SiliconeLipScrubber",
+                "stock": 1
             }
         ]
     },
@@ -6005,7 +6311,8 @@
                 "variationId": "297-default",
                 "colorName": "Compact Mirror with LED Light",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CompactMirrorwithLEDLight"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CompactMirrorwithLEDLight",
+                "stock": 1
             }
         ]
     },
@@ -6025,7 +6332,8 @@
                 "variationId": "298-default",
                 "colorName": "Reusable Sheet Mask Holder",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ReusableSheetMaskHolder"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ReusableSheetMaskHolder",
+                "stock": 1
             }
         ]
     },
@@ -6045,7 +6353,8 @@
                 "variationId": "299-default",
                 "colorName": "Digital Skin Analyzer",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DigitalSkinAnalyzer"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DigitalSkinAnalyzer",
+                "stock": 1
             }
         ]
     },
@@ -6065,7 +6374,8 @@
                 "variationId": "300-default",
                 "colorName": "Facial Cupping Set",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FacialCuppingSet"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FacialCuppingSet",
+                "stock": 1
             }
         ]
     },
@@ -6085,13 +6395,15 @@
                 "variationId": "301-black",
                 "colorName": "Black",
                 "colorHex": "#000000",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/0&text=Electric Toothbrush with App"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/0&text=Electric Toothbrush with App",
+                "stock": 150
             },
             {
                 "variationId": "301-white",
                 "colorName": "White",
                 "colorHex": "#FFFFFF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Electric Toothbrush with App"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Electric Toothbrush with App",
+                "stock": 130
             }
         ]
     },
@@ -6111,7 +6423,8 @@
                 "variationId": "302-mint",
                 "colorName": "Mint",
                 "colorHex": "#98FF98",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/98FF98&text=Whitening Toothpaste"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/98FF98&text=Whitening Toothpaste",
+                "stock": 200
             }
         ]
     },
@@ -6131,7 +6444,8 @@
                 "variationId": "303-blue",
                 "colorName": "Azure",
                 "colorHex": "#007FFF",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/007FFF&text=Alcohol-Free Mouthwash"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/007FFF&text=Alcohol-Free Mouthwash",
+                "stock": 180
             }
         ]
     },
@@ -6151,7 +6465,8 @@
                 "variationId": "304-default",
                 "colorName": "Dental Floss Picks (100 count)",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DentalFlossPicks(100count)"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DentalFlossPicks(100count)",
+                "stock": 1
             }
         ]
     },
@@ -6171,7 +6486,8 @@
                 "variationId": "305-default",
                 "colorName": "Tongue Scraper - Stainless Steel",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TongueScraper-StainlessSteel"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=TongueScraper-StainlessSteel",
+                "stock": 1
             }
         ]
     },
@@ -6191,7 +6507,8 @@
                 "variationId": "306-default",
                 "colorName": "Water Flosser",
                 "colorHex": "Default ",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=WaterFlosser"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=WaterFlosser",
+                "stock": 1
             }
         ]
     },
@@ -6524,7 +6841,8 @@
                 "variationId": "331-purple",
                 "colorName": "Lavender",
                 "colorHex": "#E6E6FA",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/E6E6FA&text=Relaxing Bath Salts - Lavender"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/E6E6FA&text=Relaxing Bath Salts - Lavender",
+                "stock": 180
             }
         ]
     },
@@ -6544,7 +6862,8 @@
                 "variationId": "332-orange",
                 "colorName": "Orange",
                 "colorHex": "#FFA500",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Exfoliating Body Wash - Citrus"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Exfoliating Body Wash - Citrus",
+                "stock": 148
             }
         ]
     },
@@ -6564,7 +6883,8 @@
                 "variationId": "333-brown",
                 "colorName": "Coconut Brown",
                 "colorHex": "#D2B48C",
-                "imageUrl": "https:\/\/dummyimage.com\/250\/D2B48C&text=Moisturizing Shower Gel - Coconut"
+                "imageUrl": "https:\/\/dummyimage.com\/250\/D2B48C&text=Moisturizing Shower Gel - Coconut",
+                "stock": 200
             }
         ]
     },
@@ -6918,5 +7238,26 @@
         "rating": 4.8,
         "reviews": 70,
         "variations": []
+    },
+    {
+        "id": "361",
+        "name": "Super UV Serum Sunscreen",
+        "basePrice": 60,
+        "description": "Super UV Invisible Sunscreen SPF 50+ with vitamin C, which protects you from 99%* sun damage and leaves you with bright skin. ",
+        "category": "Sunscreens",
+        "tags": [
+            "new"
+        ],
+        "rating": 4.3,
+        "reviews": 2,
+        "variations": [
+            {
+                "variationId": "361-Yellow",
+                "colorName": "Yellow",
+                "colorHex": "#FFFF00",
+                "imageUrl": "https:\/\/dummyimage.com\/250\/FFFF00&text=Sunscreen",
+                "stock": 0
+            }
+        ]
     }
 ]

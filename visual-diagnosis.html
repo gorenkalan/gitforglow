@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Flow Diagnosis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .flow {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .step {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 4px solid #ddd;
+            position: relative;
+        }
+        .step.success {
+            border-color: #28a745;
+            background: #f0fff4;
+        }
+        .step.error {
+            border-color: #dc3545;
+            background: #fff0f0;
+        }
+        .step.current {
+            border-color: #ffc107;
+            background: #fffbf0;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        .step-number {
+            position: absolute;
+            left: -15px;
+            top: 15px;
+            background: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .success .step-number { color: #28a745; border: 2px solid #28a745; }
+        .error .step-number { color: #dc3545; border: 2px solid #dc3545; }
+        .current .step-number { color: #ffc107; border: 2px solid #ffc107; }
+        code {
+            background: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        .solution {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order Creation Flow - Diagnostic View</h1>
+    
+    <div class="flow">
+        <div class="step success">
+            <div class="step-number">1</div>
+            <h3>Frontend Sends Request</h3>
+            <p>✅ <strong>Status: PASSED</strong></p>
+            <p>Request sent to: <code>POST /api/index.php?endpoint=create-order</code></p>
+            <p>Data includes: total, items, customer_info, form_timestamp</p>
+        </div>
+
+        <div class="step success">
+            <div class="step-number">2</div>
+            <h3>API Receives & Parses JSON</h3>
+            <p>✅ <strong>Status: PASSED</strong></p>
+            <p>JSON decoded successfully</p>
+            <p>Request method: POST ✓</p>
+        </div>
+
+        <div class="step success">
+            <div class="step-number">3</div>
+            <h3>Spam Protection Checks</h3>
+            <p>✅ <strong>Status: PASSED</strong></p>
+            <p>Honeypot field (hp_email): empty ✓</p>
+            <p>Form timestamp: Valid (> 3 seconds) ✓</p>
+            <p>Rate limiting: Not triggered ✓</p>
+        </div>
+
+        <div class="step success">
+            <div class="step-number">4</div>
+            <h3>Input Validation</h3>
+            <p>✅ <strong>Status: PASSED</strong></p>
+            <p>Has total amount ✓</p>
+            <p>Has items array ✓</p>
+            <p>Has customer info ✓</p>
+        </div>
+
+        <div class="step error current">
+            <div class="step-number">5</div>
+            <h3>Stock Verification (GoogleSheetsService)</h3>
+            <p>❌ <strong>Status: FAILED HERE</strong></p>
+            <p>Error: <code>"One or more items are out of stock. Please update your cart."</code></p>
+            <p><strong>Why it's failing:</strong></p>
+            <ul>
+                <li>GoogleSheetsService::verifyAndUpdateStock() returns <code>false</code></li>
+                <li>Likely no Google Sheets API configured for local testing</li>
+                <li>Or test products don't exist in the sheet</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <div class="step-number">6</div>
+            <h3>Create Order & Send Telegram</h3>
+            <p>⏸️ <strong>Status: NOT REACHED</strong></p>
+            <p>Would create order with ID: GLOW-{timestamp}</p>
+            <p>Would send Telegram notification</p>
+            <p>Telegram is configured and working ✓</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">7</div>
+            <h3>Return Success Response</h3>
+            <p>⏸️ <strong>Status: NOT REACHED</strong></p>
+            <p>Would return: razorpay_order_id, internal_order_id, amount</p>
+        </div>
+    </div>
+
+    <div class="solution">
+        <h3>🔧 Solution for Local Testing</h3>
+        <p><strong>The Problem:</strong> GoogleSheetsService is trying to verify stock against a Google Sheets database that isn't configured for local testing.</p>
+        
+        <p><strong>Quick Fix:</strong> In <code>backend/src/GoogleSheetsService.php</code>, modify the method:</p>
+        <pre><code>public function verifyAndUpdateStock($items) {
+    // FOR LOCAL TESTING ONLY
+    return true;  // Always have stock
+    
+    // Original implementation below (commented out)
+}</code></pre>
+        
+        <p><strong>Or in index.php:</strong> Temporarily bypass the check:</p>
+        <pre><code>// $stockAvailable = $sheetsService->verifyAndUpdateStock($input['items']);
+$stockAvailable = true; // Bypass for local testing</code></pre>
+    </div>
+
+    <script>
+        // Show current time to indicate where we're stuck
+        const currentStep = document.querySelector('.current');
+        if (currentStep) {
+            const time = new Date().toLocaleTimeString();
+            currentStep.innerHTML += `<p style="color: #ff6b6b; font-size: 0.9em;">⏰ Stuck here at ${time}</p>`;
+        }
+    </script>
+</body>
+</html>

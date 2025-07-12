@@ -19,17 +19,25 @@ class RazorpayService {
         }
     }
 
-    public function createOrder($amount, $receiptId) {
-        if (!$this->api) {
-            return ['error' => 'Razorpay is not configured.'];
+    /**
+     * Creates a Razorpay order.
+     * @param int $amountInPaise The total amount in the smallest currency unit (e.g., paise for INR).
+     * @param string $receiptId A unique ID for the order.
+     * @return array The Razorpay order data or an error array.
+     */
+    public function createOrder($amountInPaise, $receiptId) {
+       if (!$this->api) {
+            return ['error' => 'Razorpay service is not configured.'];
         }
 
+        // --- THIS IS THE CORRECTED LOGIC ---
         $orderData = [
             'receipt'         => $receiptId,
-            'amount'          => $amount * 100, // Amount in paise
+            'amount'          => (int)$amountInPaise, // Correctly uses the passed parameter
             'currency'        => 'INR',
-            'payment_capture' => 1 // Auto capture
+            'payment_capture' => 1 // Auto-capture the payment
         ];
+        // --- END OF CORRECTION ---
 
         try {
             $razorpayOrder = $this->api->order->create($orderData);
@@ -40,18 +48,21 @@ class RazorpayService {
         }
     }
 
+    /**
+     * Verifies the payment signature returned by Razorpay.
+     * @param array $attributes The response attributes from Razorpay.
+     * @return bool True if the signature is valid, false otherwise.
+     */
     public function verifySignature(array $attributes) {
         if (!$this->api) {
             return false;
         }
         
-        $expectedSignature = $attributes['razorpay_order_id'] . "|" . $attributes['razorpay_payment_id'];
-
         try {
             $this->api->utility->verifyPaymentSignature([
-                'razorpay_signature' => $attributes['razorpay_signature'],
+                'razorpay_signature'  => $attributes['razorpay_signature'],
                 'razorpay_payment_id' => $attributes['razorpay_payment_id'],
-                'razorpay_order_id' => $attributes['razorpay_order_id']
+                'razorpay_order_id'   => $attributes['razorpay_order_id']
             ]);
             return true;
         } catch(\Exception $e) {
