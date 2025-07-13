@@ -6,7 +6,7 @@ import ProductCard from '../components/ProductCard';
 import Spinner from '../components/Spinner';
 
 const HomePage = () => {
-    const [popularProducts, setPopularProducts] = useState([]);
+    const [allProducts, setAllProducts] = useState([]); // Use a new state for the full list
     const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -30,26 +30,22 @@ const HomePage = () => {
         const fetchData = async () => {
             setLoading(true);
             try {
-                // Fetch all products to filter for 'popular' tag locally
-                const productsRes = await getProducts({ limit: 500 });
-                const categoriesRes = await getCategories();
+                const [productsRes, categoriesRes] = await Promise.all([
+                    getProducts({ limit: 500 }),
+                    getCategories()
+                ]);
 
-                // --- THE FIX ---
-                // Correctly access the nested .products array from the API response
-                if (productsRes.data && Array.isArray(productsRes.data.products)) {
-                    const allProducts = productsRes.data.products;
-                    const popular = allProducts
-                        .filter(p => Array.isArray(p.tags) && p.tags.includes('popular') && Array.isArray(p.variations) && p.variations.length > 0)
-                        .slice(0, 8);
-                    setPopularProducts(popular);
-                }
+                // --- THE DEFINITIVE FIX ---
+                // Safely access the data using optional chaining (the `?.`)
+                // and default to an empty array `[]` if anything is missing.
+                setAllProducts(productsRes?.data?.products || []);
+                setCategories(categoriesRes?.data?.categories || []);
+                // --- END OF FIX ---
 
-                // Correctly access the nested .categories array
-                if (categoriesRes.data && Array.isArray(categoriesRes.data.categories)) {
-                    setCategories(categoriesRes.data.categories);
-                }
             } catch (error) {
                 console.error("Failed to fetch homepage data:", error);
+                setAllProducts([]); // Ensure state is always a valid array on error
+                setCategories([]);
             } finally {
                 setLoading(false);
             }
@@ -57,19 +53,21 @@ const HomePage = () => {
         fetchData();
     }, []);
 
+    // Filter products locally after fetching the full list
+    const popularProducts = allProducts
+        .filter(p => Array.isArray(p.tags) && p.tags.includes('popular') && Array.isArray(p.variations) && p.variations.length > 0)
+        .slice(0, 8);
+
     if (loading) {
         return <div className="flex justify-center items-center h-96"><Spinner /></div>;
     }
 
     return (
         <div className="px-6 py-6 space-y-12">
-            {/* Categories Section */}
             <div>
                 <div className="flex justify-between items-center mb-6">
                     <h2 className="font-bold text-sm tracking-wider uppercase">Categories</h2>
-                    <Link to="/categories" className="text-gray-500 hover:text-accent">
-                        <ChevronRight size={24} />
-                    </Link>
+                    <Link to="/categories" className="text-gray-500 hover:text-accent"><ChevronRight size={24} /></Link>
                 </div>
                 {categories.length > 0 ? (
                     <div className="flex space-x-6 overflow-x-auto scrollbar-hide pb-4">
@@ -89,13 +87,10 @@ const HomePage = () => {
                 ) : ( <p className="text-gray-500">No categories found.</p> )}
             </div>
 
-            {/* Popular Section */}
             <div>
                 <div className="flex justify-between items-center mb-6">
                     <h2 className="font-bold text-sm tracking-wider uppercase">Popular</h2>
-                    <Link to="/products" className="text-gray-500 hover:text-accent">
-                        <ChevronRight size={24} />
-                    </Link>
+                    <Link to="/products" className="text-gray-500 hover:text-accent"><ChevronRight size={24} /></Link>
                 </div>
                 {popularProducts.length > 0 ? (
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8">

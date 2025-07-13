@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProducts } from '../services/api';
 import useDebounce from '../hooks/useDebounce';
@@ -37,10 +37,9 @@ const ProductsPage = () => {
 
                 const res = await getProducts(params);
                 
-                // --- THE FIX ---
-                // Correctly access the nested .products and .pagination properties
-                setProducts(res.data?.products || []);
-                setPagination(res.data?.pagination || { currentPage: 1, totalPages: 1 });
+                // --- THE DEFINITIVE FIX ---
+                setProducts(res?.data?.products || []);
+                setPagination(res?.data?.pagination || { currentPage: 1, totalPages: 1 });
                 
             } catch (error) {
                 console.error("Failed to fetch products:", error);
@@ -55,7 +54,7 @@ const ProductsPage = () => {
 
     // This separate effect correctly resets the page to 1 ONLY when filters change.
     useEffect(() => {
-        // Do not reset if it's the initial render
+        // We check currentPage !== 1 to prevent an infinite loop on the initial render.
         if (currentPage !== 1) {
             setCurrentPage(1);
         }
@@ -65,7 +64,6 @@ const ProductsPage = () => {
         <div className="px-6 py-6">
             <h1 className="text-2xl font-bold mb-6 capitalize">{categoryName || 'All Products'}</h1>
             
-            {/* Search and Filters Section */}
             <div className="mb-6 space-y-4 md:flex md:space-y-0 md:space-x-4 md:items-center">
                 <div className="relative flex-grow">
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
@@ -82,7 +80,6 @@ const ProductsPage = () => {
                 </div>
             </div>
 
-            {/* Products Grid or Loading/Empty State */}
             {loading ? (
                  <div className="flex justify-center items-center h-96"><Spinner /></div>
             ) : products.length > 0 ? (
@@ -98,7 +95,6 @@ const ProductsPage = () => {
                 </div>
             )}
 
-            {/* Pagination Controls */}
             {pagination.totalPages > 1 && (
                 <div className="flex justify-center items-center space-x-2">
                     <button onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))} disabled={currentPage === 1} className="p-2 rounded-full bg-gray-200 disabled:opacity-50"><ChevronLeft /></button>

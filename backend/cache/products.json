@@ -23,14 +23,14 @@
                 "colorName": "Khaki",
                 "colorHex": "#F0E68C",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/F0E68C&text=Hydrating Face Cream",
-                "stock": 1
+                "stock": 0
             },
             {
                 "variationId": "1-blue",
                 "colorName": "Sky Blue",
                 "colorHex": "#87CEEB",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/87CEEB&text=Hydrating Face Cream",
-                "stock": 2
+                "stock": 0
             }
         ]
     },
@@ -51,7 +51,7 @@
                 "colorName": "Lavender",
                 "colorHex": "#E6E6FA",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/E6E6FA&text=Anti-Aging Night Cream",
-                "stock": 72
+                "stock": 69
             },
             {
                 "variationId": "2-mint",
@@ -163,7 +163,7 @@
                 "colorName": "Gentle Cleansing Milk",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GentleCleansingMilk",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -226,7 +226,7 @@
                 "colorName": "Hand Moisturizer SPF 20",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=HandMoisturizerSPF20",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -268,7 +268,7 @@
                 "colorName": "Brightening Face Oil",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BrighteningFaceOil",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -338,7 +338,7 @@
                 "colorName": "Anti-Pollution Cream",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-PollutionCream",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -443,7 +443,7 @@
                 "colorName": "Barrier Repair Cream",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BarrierRepairCream",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -485,7 +485,7 @@
                 "colorName": "Dark Spot Corrector Cream",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=DarkSpotCorrectorCream",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -506,7 +506,7 @@
                 "colorName": "Epidermal Growth Factor Cream",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EpidermalGrowthFactorCream",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -611,7 +611,7 @@
                 "colorName": "Ceramide Rich Cream",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=CeramideRichCream",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -632,7 +632,7 @@
                 "colorName": "Anti-Fungal Cream",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Anti-FungalCream",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -674,7 +674,7 @@
                 "colorName": "Eczema Therapy Cream",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=EczemaTherapyCream",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -767,7 +767,7 @@
                 "colorName": "Pale Green",
                 "colorHex": "#98FB98",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/98FB98&text=Niacinamide Pore Serum",
-                "stock": 121
+                "stock": 117
             },
             {
                 "variationId": "34-blue",
@@ -1384,7 +1384,7 @@
                 "colorName": "Light Blue",
                 "colorHex": "#ADD8E6",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/ADD8E6&text=Balancing Gel Cleanser",
-                "stock": 160
+                "stock": 159
             }
         ]
     },
@@ -1699,7 +1699,7 @@
                 "colorName": "Aloe Vera Calming Cleanser",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AloeVeraCalmingCleanser",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -2204,7 +2204,7 @@
                 "colorName": "Gold Anti-Wrinkle Mask",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GoldAnti-WrinkleMask",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -2225,7 +2225,7 @@
                 "colorName": "LED Light Therapy Mask",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=LEDLightTherapyMask",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -2540,7 +2540,7 @@
                 "colorName": "Magnetic Mud Mask",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=MagneticMudMask",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -3929,7 +3929,7 @@
                 "colorName": "Light",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFFFFF&text=Light",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -4328,7 +4328,7 @@
                 "colorName": "Amplify Root Lift Spray",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AmplifyRootLiftSpray",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -4566,7 +4566,7 @@
                 "colorName": "Nude",
                 "colorHex": "#E0B0FF",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/E0B0FF&text=Eyeshadow Palette - Nude Tones",
-                "stock": 140
+                "stock": 139
             }
         ]
     },
@@ -4608,7 +4608,7 @@
                 "colorName": "Brow Pencil with Spoolie",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=BrowPencilwithSpoolie",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -4755,7 +4755,7 @@
                 "colorName": "Contour Kit",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ContourKit",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -4776,7 +4776,7 @@
                 "colorName": "Blush & Highlight Duo",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=Blush&HighlightDuo",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -4797,7 +4797,7 @@
                 "colorName": "Glitter Eyeshadow Palette",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=GlitterEyeshadowPalette",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -4903,7 +4903,7 @@
                 "colorName": "Color Correcting Concealer Palette",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=ColorCorrectingConcealerPalette",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -4987,7 +4987,7 @@
                 "colorName": "Full Coverage Foundation",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=FullCoverageFoundation",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -5470,7 +5470,7 @@
                 "colorName": "Aromatherapy Essential Oil Blend",
                 "colorHex": "Default ",
                 "imageUrl": "https:\/\/dummyimage.com\/250\/FFA500&text=AromatherapyEssentialOilBlend",
-                "stock": 1
+                "stock": 0
             }
         ]
     },

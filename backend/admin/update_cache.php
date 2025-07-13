@@ -15,41 +15,51 @@ use App\GoogleSheetsService;
 use App\Config;
 
 /**
- * Builds the complete product cache by combining data from the 'products'
- * and 'inventory' sheets, including stock levels.
+ * Builds the complete product cache with robust data handling and debugging.
  */
 function build_products_cache() {
+    // For debugging, create a log file to trace the process
+    $log_file = __DIR__ . '/cache_builder.log';
+    file_put_contents($log_file, "--- Cache Build Started at " . date('Y-m-d H:i:s') . " ---\n");
+
     $sheetsService = new GoogleSheetsService();
     
-    $productsData = $sheetsService->getSheetData(Config::get('GOOGLE_SHEET_NAME_PRODUCTS'));
-    $inventoryData = $sheetsService->getSheetData(Config::get('GOOGLE_SHEET_NAME_INVENTORY'));
+    $productsSheetName = Config::get('GOOGLE_SHEET_NAME_PRODUCTS');
+    $inventorySheetName = Config::get('GOOGLE_SHEET_NAME_INVENTORY');
 
-    // Create a lookup map for inventory items for fast access
+    $productsData = $sheetsService->getSheetData($productsSheetName);
+    $inventoryData = $sheetsService->getSheetData($inventorySheetName);
+
+    file_put_contents($log_file, "Fetched " . count($productsData) . " rows from '{$productsSheetName}'.\n", FILE_APPEND);
+    file_put_contents($log_file, "Fetched " . count($inventoryData) . " rows from '{$inventorySheetName}'.\n", FILE_APPEND);
+
+    // Create a lookup map for inventory items.
     $inventoryByProductId = [];
     foreach ($inventoryData as $item) {
-        $productId = $item['productId'] ?? null;
-        if (!$productId) continue;
+        $productId = (string)($item['productId'] ?? '');
+        if (empty($productId)) continue;
 
         if (!isset($inventoryByProductId[$productId])) {
             $inventoryByProductId[$productId] = [];
         }
 
-        // --- THE CRITICAL CHANGE ---
-        // We now read the 'stock' column and save it with each variation.
         $inventoryByProductId[$productId][] = [
             'variationId' => $item['variationId'] ?? null,
             'colorName' => $item['colorName'] ?? 'Default',
             'colorHex' => $item['colorHex'] ?? '#FFFFFF',
             'imageUrl' => $item['imageUrl'] ?? '',
-            'stock' => isset($item['stock']) ? (int)$item['stock'] : 0, // Read the stock value
+            'stock' => isset($item['stock']) ? (int)$item['stock'] : 0,
         ];
     }
+    file_put_contents($log_file, "Created inventory map for " . count($inventoryByProductId) . " unique product IDs.\n", FILE_APPEND);
 
     $combinedProducts = [];
+    $products_processed = 0;
     foreach ($productsData as $product) {
-        $productId = $product['id'] ?? null;
-        if (!$productId) continue;
-
+        $productId = (string)($product['id'] ?? '');
+        if (empty($productId)) continue;
+        
+        $products_processed++;
         $variations = $inventoryByProductId[$productId] ?? [];
         
         $combinedProducts[] = [
@@ -65,17 +75,19 @@ function build_products_cache() {
         ];
     }
     
+    file_put_contents($log_file, "Processed {$products_processed} products.\n", FILE_APPEND);
+    file_put_contents($log_file, "Total products being written to cache: " . count($combinedProducts) . "\n", FILE_APPEND);
+
     $cacheDir = __DIR__ . '/../cache/';
     if (!is_dir($cacheDir)) {
         mkdir($cacheDir, 0775, true);
     }
     file_put_contents($cacheDir . 'products.json', json_encode($combinedProducts, JSON_PRETTY_PRINT));
+    file_put_contents($log_file, "--- Cache Build Finished ---\n", FILE_APPEND);
 }
 
-// Execute the cache build
 build_products_cache();
 
-// Redirect back with a success message
-$_SESSION['cache_message'] = "Product cache has been successfully refreshed from Google Sheets.";
+$_SESSION['cache_message'] = "Product cache has been successfully refreshed. Please check 'backend/admin/cache_builder.log' for details.";
 header('Location: index.php');
 exit;
