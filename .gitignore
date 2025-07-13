@@ -6,7 +6,8 @@ backend/orders/
 backend/cache/
 glow_ecommerce.zip
 backend/credentials.json
-
+backend/cache/
+glow_ecommerce.zip
 
 # Frontend Dependencies
 frontend/node_modules/
