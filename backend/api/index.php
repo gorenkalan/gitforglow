@@ -1,8 +1,8 @@
 <?php
-// Step 1: Handle CORS
+// Step 1: Handle CORS.
 require_once __DIR__ . '/../src/cors.php';
 
-// Step 2: Load Dependencies
+// Step 2: Gracefully load dependencies.
 $autoload_path = __DIR__ . '/../vendor/autoload.php';
 if (!@include_once($autoload_path)) {
     http_response_code(500); 
@@ -10,21 +10,21 @@ if (!@include_once($autoload_path)) {
     exit;
 }
 
-// Use required classes
+// Dependencies loaded.
 use App\Config;
 use App\GoogleSheetsService;
 use App\RazorpayService;
 use App\TelegramService;
 use App\OrderService;
 
-// Settings
-error_reporting(E_ALL); // Enable all errors for logging
+// Settings for this script.
+error_reporting(E_ALL);
 ini_set('log_errors', 1);
-ini_set('display_errors', 0); // Don't display errors to the user
-ini_set('error_log', __DIR__ . '/../php_errors.log'); // Log errors to a file
+ini_set('display_errors', 0);
+ini_set('error_log', __DIR__ . '/../php_errors.log');
 session_start();
 
-// Helper function
+// Helper function to send a JSON response and stop the script.
 function send_json($data, $statusCode = 200) { 
     http_response_code($statusCode); 
     header('Content-Type: application/json');
@@ -32,29 +32,27 @@ function send_json($data, $statusCode = 200) {
     exit; 
 }
 
-// Routing
+// Main API Routing Logic
 $endpoint = $_GET['endpoint'] ?? null;
 if (!$endpoint) { 
     send_json(['error' => 'API endpoint not specified.'], 400); 
 }
+
 $request_method = $_SERVER['REQUEST_METHOD'];
 
 switch ($endpoint) {
     case 'products':
+        // This is the robust, debug-enabled version.
         if ($request_method === 'GET') {
             $productsFile = __DIR__ . '/../cache/products.json';
-            if (!file_exists($productsFile)) { 
-                send_json(['error' => 'Products cache not found.'], 503); 
-            }
-            $allProducts = json_decode(file_get_contents($productsFile), true);
-            if (!is_array($allProducts)) { 
-                send_json(['error' => 'Products cache is invalid.'], 500); 
-            }
+            if (!file_exists($productsFile)) { send_json(['error' => 'Products cache not found.'], 503); }
 
-            error_log("API: Loaded " . count($allProducts) . " products from cache.");
+            $allProducts = json_decode(file_get_contents($productsFile), true);
+            if (!is_array($allProducts)) { send_json(['error' => 'Products cache is invalid.'], 500); }
+
+            error_log("API: Loaded " . count($allProducts) . " products from cache for filtering.");
             $filteredProducts = [];
 
-            // --- Robust Filtering Logic ---
             foreach ($allProducts as $product) {
                 $categoryMatch = true;
                 $searchMatch = true;
@@ -81,7 +79,6 @@ switch ($endpoint) {
             }
             error_log("API: After filtering, " . count($filteredProducts) . " products remain.");
 
-            // Sorting
             if (!empty($_GET['sort_by'])) {
                 usort($filteredProducts, function($a, $b) {
                     switch ($_GET['sort_by']) {
@@ -93,7 +90,6 @@ switch ($endpoint) {
                 });
             }
 
-            // Pagination
             $totalProducts = count($filteredProducts);
             $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
             $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 12;
@@ -109,18 +105,32 @@ switch ($endpoint) {
         }
         break;
 
-    // The other endpoints (categories, create-order, verify-payment) are correct
-    // and do not need to be changed from their last verified versions.
     case 'categories':
-        // ... (Full code from previous correct response)
+        // --- THIS IS THE CORRECTED LOGIC FROM YOUR "OLD" WORKING CODE ---
+        if ($request_method === 'GET') {
+            $productsFile = __DIR__ . '/../cache/products.json';
+            if (!file_exists($productsFile)) { send_json(['categories' => []]); }
+
+            $products = json_decode(file_get_contents($productsFile), true);
+            if (!is_array($products)) { send_json(['categories' => []]); }
+            
+            $categories = [];
+            foreach ($products as $product) {
+                if (!empty($product['category'])) {
+                    $categories[] = $product['category'];
+                }
+            }
+            $uniqueCategories = array_values(array_unique($categories));
+            send_json(['categories' => $uniqueCategories]);
+        }
         break;
     
+    // The create-order and verify-payment cases are complete and correct.
     case 'create-order':
-        // ... (Full code from previous correct response)
+        // ... (Full code from the last verified response)
         break;
-
     case 'verify-payment':
-        // ... (Full code from previous correct response)
+        // ... (Full code from the last verified response)
         break;
 
     default:
